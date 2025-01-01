@@ -1,165 +1,176 @@
-import { Box, Container, Typography, Button, Grid } from '@mui/material';
+import React from 'react';
+import { Container, Typography, Grid, Card, CardContent, CardMedia, Box } from '@mui/material';
+import Timeline from '../components/Timeline';
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Link as RouterLink } from 'react-router-dom';
+import ReactFullpage, { fullpageApi } from '@fullpage/react-fullpage';
 
-const Home = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+interface RenderProps {
+  state: any;
+  fullpageApi: fullpageApi;
+}
 
-  const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        staggerChildren: 0.3,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-    },
-  };
-
+const Home: React.FC = () => {
   return (
-    <Box>
-      {/* Hero Section */}
-      <Box
-        sx={{
-          height: '90vh',
-          display: 'flex',
-          alignItems: 'center',
-          background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://via.placeholder.com/1920x1080")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          color: 'white',
-        }}
-      >
-        <Container>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >
-            <Typography variant="h2" component="h1" gutterBottom>
-              Cabral Libii
-            </Typography>
-            <Typography variant="h4" gutterBottom>
-              Ensemble, Construisons le Cameroun de Demain
-            </Typography>
-            <Box sx={{ mt: 4 }}>
-              <Button
-                component={RouterLink}
-                to="/program"
-                variant="contained"
-                size="large"
-                sx={{ mr: 2 }}
+    <ReactFullpage
+      scrollingSpeed={1000}
+      navigation={true}
+      credits={{ enabled: false }}
+      render={(renderProps: RenderProps) => {
+        return (
+          <div id="fullpage">
+            {/* Hero Section */}
+            <div className="section">
+              <Box
+                sx={{
+                  height: '100vh',
+                  display: 'flex',
+                  alignItems: 'center',
+                  background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./cabral-libii.jpg")',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  color: 'white',
+                }}
               >
-                Découvrir le Programme
-              </Button>
-              <Button
-                component={RouterLink}
-                to="/donate"
-                variant="outlined"
-                size="large"
-                sx={{ color: 'white', borderColor: 'white' }}
-              >
-                Faire un Don
-              </Button>
-            </Box>
-          </motion.div>
-        </Container>
-      </Box>
-
-      {/* Key Points Section */}
-      <Container sx={{ py: 8 }}>
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
-          variants={containerVariants}
-        >
-          <Grid container spacing={4}>
-            {[
-              {
-                title: 'Vision',
-                content: 'Un Cameroun moderne, prospère et inclusif',
-                image: 'https://via.placeholder.com/400x300',
-              },
-              {
-                title: 'Engagement',
-                content: 'Pour une gouvernance transparente et efficace',
-                image: 'https://via.placeholder.com/400x300',
-              },
-              {
-                title: 'Action',
-                content: 'Des solutions concrètes pour le développement',
-                image: 'https://via.placeholder.com/400x300',
-              },
-            ].map((item, index) => (
-              <Grid item xs={12} md={4} key={index}>
-                <motion.div variants={itemVariants}>
-                  <Box
-                    component="img"
-                    src={item.image}
-                    alt={item.title}
-                    sx={{
-                      width: '100%',
-                      height: 'auto',
-                      borderRadius: 2,
-                      mb: 2,
-                    }}
-                  />
-                  <Typography variant="h5" gutterBottom>
-                    {item.title}
+                <Container>
+                  <Typography variant="h2" component="h1" gutterBottom>
+                    Welcome to Cabral Libii's Official Website
                   </Typography>
-                  <Typography variant="body1" color="text.secondary">
-                    {item.content}
+                  <Typography variant="h5">
+                    Together for a Better Cameroon
                   </Typography>
-                </motion.div>
-              </Grid>
-            ))}
-          </Grid>
-        </motion.div>
-      </Container>
+                </Container>
+              </Box>
+            </div>
 
-      {/* Call to Action */}
-      <Box sx={{ bgcolor: 'primary.main', color: 'white', py: 8 }}>
-        <Container>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <Typography variant="h4" align="center" gutterBottom>
-              Rejoignez le Mouvement
-            </Typography>
-            <Typography variant="h6" align="center" paragraph>
-              Ensemble, nous pouvons faire la différence pour l'avenir du Cameroun
-            </Typography>
-            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
-              <Button
-                component={RouterLink}
-                to="/scrutateurs"
-                variant="contained"
-                color="secondary"
-                size="large"
-              >
-                Devenir Scrutateur
-              </Button>
-            </Box>
-          </motion.div>
-        </Container>
-      </Box>
-    </Box>
+            {/* Vision Section */}
+            <div className="section">
+              <Container sx={{ py: 8 }}>
+                <Typography variant="h3" align="center" gutterBottom>
+                  Our Vision
+                </Typography>
+                <Grid container spacing={4}>
+                  <Grid item xs={12} sm={4}>
+                    <Card sx={{ height: '100%' }}>
+                      <CardMedia
+                        component="img"
+                        height="140"
+                        image="https://via.placeholder.com/300x140"
+                        alt="Democracy"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          Democracy
+                        </Typography>
+                        <Typography>
+                          Strengthening democratic institutions and ensuring fair representation.
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                  </Grid>
+                  <Grid item xs={12} sm={4}>
+                    <Card sx={{ height: '100%' }}>
+                      <CardMedia
+                        component="img"
+                        height="140"
+                        image="https://via.placeholder.com/300x140"
+                        alt="Education"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          Education
+                        </Typography>
+                        <Typography>
+                          Investing in quality education and youth empowerment.
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                  </Grid>
+                  <Grid item xs={12} sm={4}>
+                    <Card sx={{ height: '100%' }}>
+                      <CardMedia
+                        component="img"
+                        height="140"
+                        image="https://via.placeholder.com/300x140"
+                        alt="Economy"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          Economy
+                        </Typography>
+                        <Typography>
+                          Building a strong and inclusive economy for all Cameroonians.
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                  </Grid>
+                </Grid>
+              </Container>
+            </div>
+
+            {/* Biography Timeline Section */}
+            <div className="section">
+              <Box sx={{ 
+                background: 'linear-gradient(135deg, #f5f7fa 0%, #e4e7eb 100%)',
+                minHeight: '100vh',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+              }}>
+                <Container>
+                  <Typography variant="h3" align="center" gutterBottom sx={{ mb: 6 }}>
+                    Biographie
+                  </Typography>
+                  <Timeline />
+                </Container>
+              </Box>
+            </div>
+
+            {/* Video Section */}
+            <div className="section">
+              <Box sx={{ 
+                background: 'linear-gradient(135deg, #2d3748 0%, #1a202c 100%)',
+                minHeight: '100vh',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                color: 'white',
+              }}>
+                <Container>
+                  <Typography variant="h3" align="center" gutterBottom sx={{ mb: 6 }}>
+                    Latest Video
+                  </Typography>
+                  <Box sx={{ 
+                    position: 'relative',
+                    paddingTop: '56.25%', // 16:9 Aspect Ratio
+                    width: '100%',
+                    maxWidth: '800px',
+                    margin: '0 auto',
+                  }}>
+                    <Box
+                      component="iframe"
+                      sx={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        borderRadius: 2,
+                        border: 'none',
+                        boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+                      }}
+                      src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                      title="Cabral Libii Video"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </Box>
+                </Container>
+              </Box>
+            </div>
+          </div>
+        );
+      }}
+    />
   );
 };
 
