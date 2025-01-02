@@ -1,0 +1,191 @@
+{
+  "hero": {
+    "title": "Cabral Libii",
+    "subtitle": "Leader Politique & Défenseur du Changement"
+  },
+  "vision": {
+    "title": "Notre Vision",
+    "democracy": {
+      "title": "Démocratie",
+      "description": "Renforcer les institutions démocratiques et assurer une représentation équitable pour tous les citoyens. Nous croyons en la construction d'un gouvernement transparent et responsable qui sert son peuple."
+    },
+    "education": {
+      "title": "Éducation",
+      "description": "Investir dans une éducation de qualité et l'autonomisation des jeunes pour construire un avenir meilleur. Nous nous concentrons sur la création d'opportunités d'apprentissage et de croissance à tous les niveaux."
+    },
+    "economy": {
+      "title": "Économie",
+      "description": "Construire une économie forte et inclusive pour tous les Camerounais à travers le développement durable et des politiques innovantes qui favorisent la croissance et la prospérité."
+    }
+  },
+  "program": {
+    "title": "Notre Programme",
+    "education": {
+      "title": "Éducation",
+      "description": "Une éducation de qualité accessible à tous les Camerounais.",
+      "content": "Notre vision de l'éducation au Cameroun est basée sur l'égalité des chances et l'excellence académique. Nous proposons un programme complet qui comprend :\n\nModernisation des infrastructures scolaires dans toutes les régions du pays, assurant un environnement d'apprentissage optimal pour chaque élève.\n\nRenforcement de la formation des enseignants, avec des programmes de développement professionnel continu et des incitations pour attirer les meilleurs talents vers la profession enseignante.\n\nIntégration des technologies numériques dans l'éducation, préparant notre jeunesse aux défis du 21e siècle tout en leur donnant accès aux ressources éducatives mondiales.\n\nRévision des programmes scolaires pour inclure des compétences pratiques et entrepreneuriales, assurant une meilleure adéquation entre l'éducation et les besoins du marché du travail.\n\nDéveloppement de partenariats avec des institutions internationales pour faciliter les échanges académiques et l'accès aux opportunités d'études supérieures à l'étranger."
+    },
+    "economy": {
+      "title": "Économie",
+      "description": "Développement économique durable et création d'emplois.",
+      "content": "Notre programme économique vise à transformer le Cameroun en une puissance économique régionale. Nous nous concentrons sur :\n\nDiversification de l'économie au-delà des secteurs traditionnels, avec un accent particulier sur l'innovation et les technologies émergentes.\n\nCréation d'un environnement favorable aux entreprises, avec des réformes administratives pour faciliter la création et le développement des PME.\n\nDéveloppement des infrastructures essentielles pour soutenir la croissance économique, particulièrement dans les transports, l'énergie et les télécommunications.\n\nPromotion de l'entrepreneuriat local et attraction des investissements étrangers pour créer des emplois durables et stimuler l'innovation.\n\nMise en place de politiques fiscales justes et transparentes pour encourager l'investissement tout en assurant une répartition équitable des richesses."
+    },
+    "governance": {
+      "title": "Gouvernance",
+      "description": "Une administration transparente et efficace.",
+      "content": "Notre vision de la gouvernance est basée sur les principes de transparence, d'efficacité et de participation citoyenne. Nous proposons :\n\nNumérisation des services administratifs pour réduire la bureaucratie et améliorer l'accès aux services publics.\n\nRenforcement des institutions démocratiques et promotion de la séparation des pouvoirs.\n\nLutte active contre la corruption à tous les niveaux de l'administration publique.\n\nDécentralisation effective du pouvoir pour donner plus d'autonomie aux régions et aux collectivités locales.\n\nMise en place de mécanismes de consultation citoyenne pour impliquer la population dans les décisions importantes."
+    },
+    "health": {
+      "title": "Santé",
+      "description": "Un système de santé moderne et accessible.",
+      "content": "Notre programme de santé vise à assurer un accès universel à des soins de qualité. Nos priorités incluent :\n\nConstruction et modernisation des centres de santé dans toutes les régions du pays.\n\nFormation continue du personnel médical et recrutement de nouveaux professionnels de santé.\n\nAmélioration de l'accès aux médicaments essentiels et développement de la production pharmaceutique locale.\n\nRenforcement des programmes de prévention et d'éducation à la santé.\n\nMise en place d'un système d'assurance maladie universelle pour protéger tous les citoyens."
+    },
+    "infrastructure": {
+      "title": "Infrastructure",
+      "description": "Modernisation des infrastructures nationales.",
+      "content": "Notre vision pour les infrastructures du Cameroun comprend :\n\nDéveloppement d'un réseau routier moderne reliant toutes les régions du pays.\n\nModernisation des ports et aéroports pour faciliter le commerce international.\n\nExtension du réseau électrique et développement des énergies renouvelables.\n\nAmélioration des infrastructures urbaines pour créer des villes plus vivables et durables.\n\nDéploiement du réseau internet haut débit dans tout le pays."
+    },
+    "youth": {
+      "title": "Jeunesse",
+      "description": "Opportunités et développement pour la jeunesse.",
+      "content": "Notre programme jeunesse vise à créer un avenir prometteur pour les jeunes Camerounais. Nous proposons :\n\nProgrammes de formation professionnelle adaptés aux besoins du marché du travail.\n\nIncitations à l'entrepreneuriat des jeunes et au développement des startups.\n\nInfrastructures sportives et culturelles pour promouvoir le développement des jeunes.\n\nProgrammes d'échanges internationaux pour enrichir les expériences et les compétences.\n\nSystème de mentorat et d'accompagnement pour guider les jeunes dans leur développement professionnel."
+    }
+  },
+  "biography": {
+    "title": "Biographie",
+    "events": {
+      "birth": {
+        "date": "29 mars 1980",
+        "title": "Naissance",
+        "description": "Cabral Libii Li Ngue est né à Douala, au Cameroun, dans une famille modeste. Son éducation lui a inculqué un fort sens de la détermination et le désir de contribuer au développement du Cameroun."
+      },
+      "university": {
+        "title": "Études Universitaires",
+        "description": "Cabral a poursuivi ses études supérieures à l'Université de Yaoundé II, obtenant un diplôme en Droit et Sciences Politiques. Il s'est également spécialisé en journalisme et communication, se préparant à une carrière dans l'académie et les médias."
+      },
+      "journalist": {
+        "title": "Journaliste et Académicien",
+        "description": "Cabral a travaillé comme journaliste et s'est fait connaître pour son traitement des questions socio-politiques au Cameroun. Parallèlement, il a enseigné la communication publique et les sciences politiques, influençant une génération d'étudiants avec ses idées réformistes."
+      },
+      "youth": {
+        "title": "Défenseur de l'Engagement des Jeunes",
+        "description": "Cabral s'est concentré sur des initiatives pour engager les jeunes Camerounais dans les activités civiques. Il a commencé à organiser des forums et des programmes pour éduquer les jeunes sur la gouvernance et leur rôle dans les processus politiques."
+      },
+      "candidate": {
+        "title": "Préparation à la Candidature Présidentielle",
+        "description": "Libii a annoncé son intention de se présenter à la présidence, représentant le parti Univers. Il a lancé la campagne '11 Millions de Citoyens', visant à mobiliser les jeunes électeurs et à attirer l'attention sur la sous-représentation des jeunes dans la politique camerounaise."
+      },
+      "election": {
+        "date": "7 octobre 2018",
+        "title": "Élection Présidentielle 2018",
+        "description": "Cabral Libii s'est présenté à l'élection présidentielle camerounaise, obtenant la troisième place avec environ 6,28% des voix. Sa campagne a mis l'accent sur la réforme économique, la transparence et l'autonomisation des jeunes, attirant une attention significative au niveau national et international."
+      },
+      "present": {
+        "title": "Défenseur Politique et Social",
+        "description": "Après l'élection, Libii a poursuivi son travail politique, se concentrant sur le développement local et le plaidoyer pour des réformes démocratiques. Il reste actif dans la promotion de l'implication des jeunes dans la gouvernance et le traitement des questions urgentes comme l'éducation, le chômage et les infrastructures."
+      }
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "vision": "Vision",
+    "biography": "Biographie",
+    "media": "Médias"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous sommes à votre écoute",
+    "form": {
+      "title": "Envoyez-nous un message",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer"
+    },
+    "info": {
+      "title": "Informations de Contact",
+      "address": "Siège de Campagne :\n123 Rue Exemple\nYaoundé, Cameroun",
+      "contact": "Email : contact@cabrallibii.com\nTéléphone : +237 123 456 789"
+    },
+    "social": {
+      "title": "Suivez-nous"
+    }
+  },
+  "donate": {
+    "title": "Soutenez la Campagne",
+    "subtitle": "Votre contribution fait la différence",
+    "goal": "Objectif de la Campagne : {{amount}} FCFA",
+    "collected": "{{amount}} FCFA collectés",
+    "total": "{{amount}} FCFA",
+    "form": {
+      "title": "Faire un Don",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "amount": "Montant (FCFA)",
+      "submit": "Faire un Don Sécurisé"
+    },
+    "payment": {
+      "title": "Moyens de Paiement",
+      "accept": "Nous acceptons :",
+      "methods": {
+        "card": "Carte Bancaire",
+        "mobile": "Mobile Money (Orange, MTN)",
+        "paypal": "PayPal"
+      }
+    }
+  },
+  "news": {
+    "title": "Actualités",
+    "subtitle": "Restez informé des dernières actualités de la campagne",
+    "items": {
+      "campaign": {
+        "title": "Lancement de la Campagne 2025",
+        "date": "31 décembre 2024",
+        "category": "Événement",
+        "content": "Cabral Libii lance officiellement sa campagne présidentielle pour 2025..."
+      },
+      "youth": {
+        "title": "Rencontre avec la Jeunesse",
+        "date": "30 décembre 2024",
+        "category": "Réunion",
+        "content": "Une session interactive avec les jeunes sur l'avenir du Cameroun..."
+      },
+      "economy": {
+        "title": "Programme Économique",
+        "date": "29 décembre 2024",
+        "category": "Programme",
+        "content": "Présentation détaillée du programme économique pour le développement..."
+      }
+    }
+  },
+  "scrutateurs": {
+    "title": "Devenez Scrutateur",
+    "subtitle": "Participez à la transparence du processus électoral",
+    "steps": {
+      "personal": "Informations Personnelles",
+      "location": "Localisation",
+      "confirmation": "Confirmation"
+    },
+    "form": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "region": "Région",
+      "city": "Ville",
+      "neighborhood": "Quartier"
+    },
+    "confirmation": {
+      "title": "Merci pour votre inscription !",
+      "message": "Nous examinerons votre candidature et vous contacterons bientôt."
+    },
+    "buttons": {
+      "back": "Retour",
+      "next": "Suivant",
+      "submit": "Soumettre"
+    }
+  }
+}

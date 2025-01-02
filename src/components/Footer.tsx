@@ -1,7 +1,10 @@
 import React from 'react';
 import { Box, Container, Typography, Link } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
-const Footer = () => {
+const Footer: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <Box
       component="footer"
@@ -10,21 +13,27 @@ const Footer = () => {
         px: 2,
         mt: 'auto',
         background: 'linear-gradient(90deg, #2d3748 0%, #4a5568 100%)',
-        color: 'white',
       }}
     >
-      <Container maxWidth="lg">
-        <Typography variant="body2" align="center">
-          {'Copyright © '}
-          <Link
-            color="inherit"
-            href="https://github.com/phytt"
+      <Container maxWidth="sm">
+        <Typography variant="body2" color="white" align="center">
+          {'© '}
+          {new Date().getFullYear()}
+          {' '}
+          <Link 
+            color="inherit" 
+            href="https://phytt.eu"
             target="_blank"
             rel="noopener noreferrer"
+            sx={{ 
+              textDecoration: 'none',
+              '&:hover': {
+                textDecoration: 'underline'
+              }
+            }}
           >
-            phytt
-          </Link>{' '}
-          {new Date().getFullYear()}
+            Phytt
+          </Link>
           {'. All rights reserved.'}
         </Typography>
       </Container>

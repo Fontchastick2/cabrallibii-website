@@ -1,0 +1,191 @@
+{
+  "hero": {
+    "title": "Cabral Libii",
+    "subtitle": "Political Leader & Advocate for Change"
+  },
+  "vision": {
+    "title": "Our Vision",
+    "democracy": {
+      "title": "Democracy",
+      "description": "Strengthening democratic institutions and ensuring fair representation for all citizens. We believe in building a transparent and accountable government that serves its people."
+    },
+    "education": {
+      "title": "Education",
+      "description": "Investing in quality education and youth empowerment to build a brighter future. We focus on creating opportunities for learning and growth at all levels."
+    },
+    "economy": {
+      "title": "Economy",
+      "description": "Building a strong and inclusive economy for all Cameroonians through sustainable development and innovative policies that promote growth and prosperity."
+    }
+  },
+  "program": {
+    "title": "Our Program",
+    "education": {
+      "title": "Education",
+      "description": "Quality education accessible to all Cameroonians.",
+      "content": "Our vision for education in Cameroon is based on equal opportunities and academic excellence. We propose a comprehensive program that includes:\n\nModernization of school infrastructure in all regions of the country, ensuring an optimal learning environment for every student.\n\nStrengthening teacher training, with continuous professional development programs and incentives to attract the best talent to the teaching profession.\n\nIntegration of digital technologies in education, preparing our youth for the challenges of the 21st century while giving them access to global educational resources.\n\nRevision of school curricula to include practical and entrepreneurial skills, ensuring better alignment between education and labor market needs.\n\nDevelopment of partnerships with international institutions to facilitate academic exchanges and access to higher education opportunities abroad."
+    },
+    "economy": {
+      "title": "Economy",
+      "description": "Sustainable economic development and job creation.",
+      "content": "Our economic program aims to transform Cameroon into a regional economic power. We focus on:\n\nDiversification of the economy beyond traditional sectors, with a particular emphasis on innovation and emerging technologies.\n\nCreation of a business-friendly environment, with administrative reforms to facilitate the creation and development of SMEs.\n\nDevelopment of essential infrastructure to support economic growth, particularly in transportation, energy, and telecommunications.\n\nPromotion of local entrepreneurship and attraction of foreign investment to create sustainable jobs and stimulate innovation.\n\nImplementation of fair and transparent fiscal policies to encourage investment while ensuring equitable distribution of wealth."
+    },
+    "governance": {
+      "title": "Governance",
+      "description": "A transparent and efficient administration.",
+      "content": "Our vision for governance is based on the principles of transparency, efficiency, and citizen participation. We propose:\n\nDigitalization of administrative services to reduce bureaucracy and improve access to public services.\n\nStrengthening of democratic institutions and promotion of separation of powers.\n\nActive fight against corruption at all levels of public administration.\n\nEffective decentralization of power to give more autonomy to regions and local communities.\n\nImplementation of citizen consultation mechanisms to involve the population in important decisions."
+    },
+    "health": {
+      "title": "Health",
+      "description": "A modern and accessible healthcare system.",
+      "content": "Our health program aims to ensure universal access to quality care. Our priorities include:\n\nConstruction and modernization of health centers in all regions of the country.\n\nContinuous training of medical personnel and recruitment of new healthcare professionals.\n\nImprovement of access to essential medicines and development of local pharmaceutical production.\n\nStrengthening of prevention programs and health education.\n\nImplementation of a universal health insurance system to protect all citizens."
+    },
+    "infrastructure": {
+      "title": "Infrastructure",
+      "description": "Modernization of national infrastructure.",
+      "content": "Our vision for Cameroon's infrastructure includes:\n\nDevelopment of a modern road network connecting all regions of the country.\n\nModernization of ports and airports to facilitate international trade.\n\nExpansion of the electricity grid and development of renewable energy.\n\nImprovement of urban infrastructure to create more livable and sustainable cities.\n\nDeployment of high-speed internet network throughout the country."
+    },
+    "youth": {
+      "title": "Youth",
+      "description": "Opportunities and development for youth.",
+      "content": "Our youth program aims to create a promising future for young Cameroonians. We propose:\n\nVocational training programs adapted to labor market needs.\n\nIncentives for youth entrepreneurship and startup development.\n\nSports and cultural infrastructure to promote youth development.\n\nInternational exchange programs to enrich experiences and skills.\n\nMentoring and support system to guide youth in their professional development."
+    }
+  },
+  "biography": {
+    "title": "Biography",
+    "events": {
+      "birth": {
+        "date": "March 29, 1980",
+        "title": "Birth",
+        "description": "Cabral Libii Li Ngue was born in Douala, Cameroon, into a modest family. His upbringing instilled in him a strong sense of determination and a desire to contribute to Cameroon's development."
+      },
+      "university": {
+        "title": "University Studies",
+        "description": "Cabral pursued higher education at the University of Yaoundé II, earning a degree in Law and Political Science. He also specialized in journalism and communication, preparing for a career in both academia and media."
+      },
+      "journalist": {
+        "title": "Journalist and Academic",
+        "description": "Cabral worked as a journalist and became known for addressing socio-political issues in Cameroon. Simultaneously, he taught public communication and political science, influencing a generation of students with his reformist ideas."
+      },
+      "youth": {
+        "title": "Advocate for Youth Engagement",
+        "description": "Cabral focused on initiatives to engage young Cameroonians in civic activities. He began organizing forums and programs to educate youths about governance and their role in political processes."
+      },
+      "candidate": {
+        "title": "Presidential Candidate Preparation",
+        "description": "Libii announced his intention to run for president, representing the Univers party. He started the \"11 Million Citizens\" campaign, aiming to mobilize young voters and bring attention to the underrepresentation of youth in Cameroonian politics."
+      },
+      "election": {
+        "date": "October 7, 2018",
+        "title": "2018 Presidential Election",
+        "description": "Cabral Libii ran in the Cameroonian presidential election, earning third place with approximately 6.28% of the votes. His campaign emphasized economic reform, transparency, and youth empowerment, gaining significant attention nationally and internationally."
+      },
+      "present": {
+        "title": "Political and Social Advocate",
+        "description": "After the election, Libii continued his political work, focusing on grassroots development and advocacy for democratic reforms. He remains active in promoting youth involvement in governance and addressing pressing issues like education, unemployment, and infrastructure."
+      }
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "vision": "Vision",
+    "biography": "Biography",
+    "media": "Media"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to listen",
+    "form": {
+      "title": "Send us a message",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send"
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Campaign Headquarters:\n123 Example Street\nYaoundé, Cameroon",
+      "contact": "Email: contact@cabrallibii.com\nPhone: +237 123 456 789"
+    },
+    "social": {
+      "title": "Follow Us"
+    }
+  },
+  "donate": {
+    "title": "Support the Campaign",
+    "subtitle": "Your contribution makes a difference",
+    "goal": "Campaign Goal: {{amount}} FCFA",
+    "collected": "{{amount}} FCFA collected",
+    "total": "{{amount}} FCFA",
+    "form": {
+      "title": "Make a Donation",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "amount": "Amount (FCFA)",
+      "submit": "Make a Secure Donation"
+    },
+    "payment": {
+      "title": "Payment Methods",
+      "accept": "We accept:",
+      "methods": {
+        "card": "Credit Card",
+        "mobile": "Mobile Money (Orange, MTN)",
+        "paypal": "PayPal"
+      }
+    }
+  },
+  "news": {
+    "title": "News",
+    "subtitle": "Stay informed about the latest campaign updates",
+    "items": {
+      "campaign": {
+        "title": "2025 Campaign Launch",
+        "date": "December 31, 2024",
+        "category": "Event",
+        "content": "Cabral Libii officially launches his presidential campaign for 2025..."
+      },
+      "youth": {
+        "title": "Meeting with Youth",
+        "date": "December 30, 2024",
+        "category": "Meeting",
+        "content": "An interactive session with young people about the future of Cameroon..."
+      },
+      "economy": {
+        "title": "Economic Program",
+        "date": "December 29, 2024",
+        "category": "Program",
+        "content": "Detailed presentation of the economic program for development..."
+      }
+    }
+  },
+  "scrutateurs": {
+    "title": "Become a Poll Worker",
+    "subtitle": "Join us to ensure transparency in the electoral process",
+    "steps": {
+      "personal": "Personal Information",
+      "location": "Location",
+      "confirmation": "Confirmation"
+    },
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "region": "Region",
+      "city": "City",
+      "neighborhood": "Neighborhood"
+    },
+    "confirmation": {
+      "title": "Confirmation",
+      "message": "Please verify your information before submitting your application."
+    },
+    "buttons": {
+      "back": "Back",
+      "next": "Next",
+      "submit": "Submit"
+    }
+  }
+}

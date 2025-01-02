@@ -2,38 +2,57 @@ import React, { useState, useEffect } from 'react';
 import { Box, Typography, Paper, Grid, useTheme, useMediaQuery } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from 'react-i18next';
 
 interface TimelineEvent {
   date: string;
-  title: string;
-  description: string;
+  dateKey: string;
+  titleKey: string;
+  descriptionKey: string;
 }
 
 const events: TimelineEvent[] = [
   {
-    date: '19 sept 2021',
-    title: 'Political Journey Begins',
-    description: 'Launched the campaign for democratic change and social justice.'
+    date: 'March 29, 1980',
+    dateKey: 'biography.events.birth.date',
+    titleKey: 'biography.events.birth.title',
+    descriptionKey: 'biography.events.birth.description'
   },
   {
-    date: '19 sept 2022',
-    title: 'National Movement',
-    description: 'Expanded the movement nationwide, reaching all regions of Cameroon.'
+    date: '1998–2003',
+    dateKey: '1998–2003',
+    titleKey: 'biography.events.university.title',
+    descriptionKey: 'biography.events.university.description'
   },
   {
-    date: '23 sept 2022',
-    title: 'Youth Engagement',
-    description: 'Initiated major youth programs and educational reforms.'
+    date: '2005–2010',
+    dateKey: '2005–2010',
+    titleKey: 'biography.events.journalist.title',
+    descriptionKey: 'biography.events.journalist.description'
   },
   {
-    date: '23 sept 2022',
-    title: 'Economic Vision',
-    description: 'Presented comprehensive economic development plan for Cameroon.'
+    date: '2010–2015',
+    dateKey: '2010–2015',
+    titleKey: 'biography.events.youth.title',
+    descriptionKey: 'biography.events.youth.description'
   },
   {
-    date: '23 sept 2022',
-    title: 'International Recognition',
-    description: 'Gained international support and recognition for democratic initiatives.'
+    date: '2017–2018',
+    dateKey: '2017–2018',
+    titleKey: 'biography.events.candidate.title',
+    descriptionKey: 'biography.events.candidate.description'
+  },
+  {
+    date: 'October 7, 2018',
+    dateKey: 'biography.events.election.date',
+    titleKey: 'biography.events.election.title',
+    descriptionKey: 'biography.events.election.description'
+  },
+  {
+    date: '2019–Present',
+    dateKey: '2019–Present',
+    titleKey: 'biography.events.present.title',
+    descriptionKey: 'biography.events.present.description'
   }
 ];
 
@@ -85,38 +104,46 @@ const EventCard = styled(Paper)(({ theme }) => ({
 
 const Timeline: React.FC = () => {
   const [selectedEvent, setSelectedEvent] = useState<number>(0);
+  const [isHovered, setIsHovered] = useState(false);
   const theme = useTheme();
   const isTabletUp = useMediaQuery(theme.breakpoints.up('sm'));
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setSelectedEvent((prev) => (prev + 1) % events.length);
-    }, 5000);
-
+    let interval: NodeJS.Timeout;
+    if (!isHovered) {
+      interval = setInterval(() => {
+        setSelectedEvent((prev) => (prev + 1) % events.length);
+      }, 5000);
+    }
     return () => clearInterval(interval);
-  }, []);
+  }, [isHovered]);
+
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
 
   return (
     <Box>
-      <Grid container spacing={4}>
+      <Grid container spacing={18}>
         {isTabletUp && (
-          <Grid item sm={5} md={4}>
+          <Grid item sm={5} md={4} sx={{ display: { xs: 'none', sm: 'block' } }}>
             <motion.div
               initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <Box
                 component="img"
-                src="./timeline.jpg"
+                src="/timeline.jpg"
                 alt="Timeline"
                 sx={{
-                  width: '100%',
+                  width: '150%',
                   height: 'auto',
                   borderRadius: 2,
                   boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
                   position: 'sticky',
                   top: theme.spacing(4),
+                  transform: 'translateX(-15%)',
                 }}
               />
             </motion.div>
@@ -124,67 +151,100 @@ const Timeline: React.FC = () => {
         )}
 
         <Grid item xs={12} sm={7} md={8}>
-          {events.map((event, index) => (
-            <Box
-              key={index}
-              sx={{
-                display: 'flex',
-                alignItems: 'flex-start',
-                mb: index === selectedEvent ? 2 : 0.5,
-              }}
-            >
-              <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <TimelineDot
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9 }}
-                  animate={{ 
-                    scale: selectedEvent === index ? 1.2 : 1,
-                    backgroundColor: selectedEvent === index ? '#805ad5' : '#4a90e2'
+          <Box onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            {events.map((event, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ 
+                  duration: 0.5,
+                  delay: index * 0.15,
+                  ease: "easeOut"
+                }}
+              >
+                <Box
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'flex-start',
+                    mb: index === selectedEvent ? 2 : 0.5,
                   }}
-                  onClick={() => setSelectedEvent(index)}
-                />
-                {index < events.length - 1 && (
-                  <TimelineLine sx={{ height: selectedEvent === index ? 'auto' : 20 }} />
-                )}
-              </Box>
-              
-              <Box sx={{ flex: 1 }}>
-                <Typography 
-                  variant="subtitle2" 
-                  sx={{ 
-                    color: selectedEvent === index ? 'primary.main' : 'text.secondary',
-                    mb: selectedEvent === index ? 1 : 0,
-                    ml: 3,
-                    cursor: 'pointer',
-                    fontWeight: selectedEvent === index ? 600 : 400,
-                  }}
-                  onClick={() => setSelectedEvent(index)}
                 >
-                  {event.date}
-                </Typography>
-                
-                <AnimatePresence mode="wait">
-                  {selectedEvent === index && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.3 }}
+                  <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                    <TimelineDot
+                      whileHover={{ scale: 1.2 }}
+                      whileTap={{ scale: 0.9 }}
+                      animate={{ 
+                        scale: selectedEvent === index ? 1.2 : 1,
+                        backgroundColor: selectedEvent === index ? '#805ad5' : '#4a90e2'
+                      }}
+                      onClick={() => setSelectedEvent(index)}
+                    />
+                    {index < events.length - 1 && (
+                      <TimelineLine sx={{ height: selectedEvent === index ? 'auto' : 20 }} />
+                    )}
+                  </Box>
+                  
+                  <Box sx={{ flex: 1 }}>
+                    <Box
+                      sx={{ 
+                        display: 'flex',
+                        alignItems: 'baseline',
+                        ml: 3,
+                        mb: 1,
+                        cursor: 'pointer',
+                      }}
+                      onClick={() => setSelectedEvent(index)}
                     >
-                      <EventCard>
-                        <Typography variant="h6" gutterBottom>
-                          {event.title}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                          {event.description}
-                        </Typography>
-                      </EventCard>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </Box>
-            </Box>
-          ))}
+                      <Typography 
+                        variant="subtitle2" 
+                        sx={{ 
+                          color: selectedEvent === index ? 'primary.main' : 'text.secondary',
+                          fontWeight: selectedEvent === index ? 600 : 400,
+                          mr: 2,
+                        }}
+                      >
+                        <Trans key={event.dateKey}>
+                          {event.dateKey}
+                        </Trans>
+                      </Typography>
+                      <Typography 
+                        variant="h6"
+                        sx={{ 
+                          color: selectedEvent === index ? 'text.primary' : 'text.secondary',
+                          fontWeight: selectedEvent === index ? 600 : 400,
+                        }}
+                      >
+                        <Trans key={event.titleKey}>
+                          {event.titleKey}
+                        </Trans>
+                      </Typography>
+                    </Box>
+                    
+                    <AnimatePresence mode="wait">
+                      {selectedEvent === index && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: 'auto' }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.3 }}
+                        >
+                          <EventCard>
+                            <Typography variant="body2" color="text.secondary">
+                              <Trans key={event.descriptionKey}>
+                                {event.descriptionKey}
+                              </Trans>
+                            </Typography>
+                          </EventCard>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </Box>
+                </Box>
+              </motion.div>
+            ))}
+          </Box>
         </Grid>
       </Grid>
     </Box>
