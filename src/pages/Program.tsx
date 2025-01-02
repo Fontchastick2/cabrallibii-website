@@ -123,10 +123,10 @@ const Program: React.FC = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    <Trans i18nKey={card.titleKey as any} />
+                    {t(card.titleKey)}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    <Trans i18nKey={card.descriptionKey as any} />
+                  <Typography variant="body2" color="textSecondary" component="p">
+                    {t(card.descriptionKey)}
                   </Typography>
                 </CardContent>
               </Card>
@@ -247,10 +247,10 @@ const Program: React.FC = () => {
                   }}
                 >
                   <Typography variant="h4" gutterBottom>
-                    <Trans i18nKey={selectedCard.titleKey as any} />
+                    {t(selectedCard.titleKey)}
                   </Typography>
                   <Typography variant="body1" sx={{ whiteSpace: 'pre-line' }}>
-                    <Trans i18nKey={selectedCard.contentKey as any} />
+                    {t(selectedCard.contentKey)}
                   </Typography>
                 </Box>
               </Box>
