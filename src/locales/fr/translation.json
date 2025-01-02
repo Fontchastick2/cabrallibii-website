@@ -28,27 +28,27 @@
     "economy": {
       "title": "Économie",
       "description": "Développement économique durable et création d'emplois.",
-      "content": "Notre programme économique vise à transformer le Cameroun en une puissance économique régionale. Nous nous concentrons sur :\n\nDiversification de l'économie au-delà des secteurs traditionnels, avec un accent particulier sur l'innovation et les technologies émergentes.\n\nCréation d'un environnement favorable aux entreprises, avec des réformes administratives pour faciliter la création et le développement des PME.\n\nDéveloppement des infrastructures essentielles pour soutenir la croissance économique, particulièrement dans les transports, l'énergie et les télécommunications.\n\nPromotion de l'entrepreneuriat local et attraction des investissements étrangers pour créer des emplois durables et stimuler l'innovation.\n\nMise en place de politiques fiscales justes et transparentes pour encourager l'investissement tout en assurant une répartition équitable des richesses."
+      "content": "Notre programme économique vise à transformer le Cameroun en une puissance économique régionale. Nous nous concentrons sur :\n\nDiversification de l'économie au-delà des secteurs traditionnels, avec un accent particulier sur l'innovation et les technologies émergentes.\n\nCréation d'un environnement favorable aux entreprises, avec des réformes administratives pour faciliter la création et le développement des PME.\n\nDéveloppement des infrastructures essentielles pour soutenir la croissance économique.\n\nPromotion des partenariats commerciaux régionaux et internationaux.\n\nMise en œuvre de politiques pour attirer les investissements étrangers tout en protégeant les intérêts locaux."
     },
     "governance": {
       "title": "Gouvernance",
-      "description": "Une administration transparente et efficace.",
-      "content": "Notre vision de la gouvernance est basée sur les principes de transparence, d'efficacité et de participation citoyenne. Nous proposons :\n\nNumérisation des services administratifs pour réduire la bureaucratie et améliorer l'accès aux services publics.\n\nRenforcement des institutions démocratiques et promotion de la séparation des pouvoirs.\n\nLutte active contre la corruption à tous les niveaux de l'administration publique.\n\nDécentralisation effective du pouvoir pour donner plus d'autonomie aux régions et aux collectivités locales.\n\nMise en place de mécanismes de consultation citoyenne pour impliquer la population dans les décisions importantes."
+      "description": "Une gouvernance transparente et efficace pour tous.",
+      "content": "Notre programme de gouvernance se concentre sur la construction d'institutions fortes et responsables qui servent tous les citoyens :\n\nMise en œuvre de solutions de gouvernance numérique pour améliorer la prestation de services et réduire la corruption.\n\nRenforcement des structures de gouvernance locale pour assurer une meilleure représentation.\n\nRéforme des procédures administratives pour accroître l'efficacité et la transparence.\n\nAmélioration de la participation citoyenne aux processus décisionnels.\n\nModernisation des services publics grâce à la technologie et à la formation."
     },
     "health": {
       "title": "Santé",
-      "description": "Un système de santé moderne et accessible.",
-      "content": "Notre programme de santé vise à assurer un accès universel à des soins de qualité. Nos priorités incluent :\n\nConstruction et modernisation des centres de santé dans toutes les régions du pays.\n\nFormation continue du personnel médical et recrutement de nouveaux professionnels de santé.\n\nAmélioration de l'accès aux médicaments essentiels et développement de la production pharmaceutique locale.\n\nRenforcement des programmes de prévention et d'éducation à la santé.\n\nMise en place d'un système d'assurance maladie universelle pour protéger tous les citoyens."
+      "description": "Des soins de santé de qualité accessibles à tous les Camerounais.",
+      "content": "Notre programme de santé vise à révolutionner la prestation des soins de santé au Cameroun :\n\nModernisation des établissements de santé dans toutes les régions.\n\nMise en œuvre d'une couverture sanitaire universelle.\n\nRenforcement des programmes de soins préventifs.\n\nAmélioration des services de santé maternelle et infantile.\n\nDéveloppement de programmes de formation médicale pour augmenter le personnel de santé."
     },
     "infrastructure": {
       "title": "Infrastructure",
-      "description": "Modernisation des infrastructures nationales.",
-      "content": "Notre vision pour les infrastructures du Cameroun comprend :\n\nDéveloppement d'un réseau routier moderne reliant toutes les régions du pays.\n\nModernisation des ports et aéroports pour faciliter le commerce international.\n\nExtension du réseau électrique et développement des énergies renouvelables.\n\nAmélioration des infrastructures urbaines pour créer des villes plus vivables et durables.\n\nDéploiement du réseau internet haut débit dans tout le pays."
+      "description": "Des infrastructures modernes pour un développement durable.",
+      "content": "Notre programme d'infrastructure se concentre sur la construction des fondations de la croissance économique :\n\nDéveloppement de réseaux de transport modernes à travers le pays.\n\nExpansion de l'approvisionnement fiable en électricité et en eau.\n\nMise en œuvre d'infrastructures numériques pour une meilleure connectivité.\n\nConstruction de projets de développement urbain durable.\n\nModernisation des infrastructures agricoles pour soutenir la sécurité alimentaire."
     },
     "youth": {
       "title": "Jeunesse",
-      "description": "Opportunités et développement pour la jeunesse.",
-      "content": "Notre programme jeunesse vise à créer un avenir prometteur pour les jeunes Camerounais. Nous proposons :\n\nProgrammes de formation professionnelle adaptés aux besoins du marché du travail.\n\nIncitations à l'entrepreneuriat des jeunes et au développement des startups.\n\nInfrastructures sportives et culturelles pour promouvoir le développement des jeunes.\n\nProgrammes d'échanges internationaux pour enrichir les expériences et les compétences.\n\nSystème de mentorat et d'accompagnement pour guider les jeunes dans leur développement professionnel."
+      "description": "Autonomiser la prochaine génération de leaders.",
+      "content": "Notre programme pour la jeunesse vise à créer des opportunités pour les jeunes Camerounais :\n\nCréation de programmes de formation professionnelle et d'entrepreneuriat.\n\nÉtablissement de centres d'innovation pour les jeunes à travers le pays.\n\nDéveloppement d'installations sportives et culturelles.\n\nMise en œuvre de programmes de mentorat et de leadership.\n\nSoutien aux initiatives et aux startups dirigées par des jeunes."
     }
   },
   "biography": {
@@ -88,103 +88,129 @@
   },
   "nav": {
     "home": "Accueil",
-    "vision": "Vision",
-    "biography": "Biographie",
-    "media": "Médias"
+    "program": "Programme",
+    "donate": "Faire un don",
+    "scrutateurs": "Scrutateurs",
+    "news": "Actualités",
+    "contact": "Contact"
+  },
+  "donate": {
+    "title": "Soutenez la Campagne",
+    "subtitle": "Votre contribution fait la différence",
+    "campaign_goal": "Objectif de la campagne: 1,000,000 FCFA",
+    "collected": "600,000 FCFA collectés",
+    "goal": "1,000,000 FCFA",
+    "form": {
+      "title": "Faire un don",
+      "amount": "Montant",
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Numéro de téléphone",
+      "submit": "Faire un don maintenant",
+      "secure_payment": "Paiement sécurisé propulsé par nos partenaires"
+    },
+    "why_donate": {
+      "title": "Pourquoi faire un don ?",
+      "description": "Votre don nous aide à :",
+      "reasons": [
+        "Organiser des événements de campagne à travers le pays",
+        "Développer et distribuer le matériel de campagne",
+        "Soutenir nos bénévoles et équipes de terrain",
+        "Atteindre plus de citoyens avec notre message"
+      ]
+    }
   },
   "contact": {
     "title": "Contactez-nous",
     "subtitle": "Nous sommes à votre écoute",
     "form": {
       "title": "Envoyez-nous un message",
-      "firstName": "Prénom",
-      "lastName": "Nom",
+      "first_name": "Prénom",
+      "last_name": "Nom",
       "email": "Email",
-      "subject": "Sujet",
-      "message": "Message",
-      "send": "Envoyer"
+      "phone": "Numéro de téléphone",
+      "message": "Votre message",
+      "submit": "Envoyer le message"
     },
     "info": {
-      "title": "Informations de Contact",
-      "address": "Siège de Campagne :\n123 Rue Exemple\nYaoundé, Cameroun",
-      "contact": "Email : contact@cabrallibii.com\nTéléphone : +237 123 456 789"
-    },
-    "social": {
-      "title": "Suivez-nous"
-    }
-  },
-  "donate": {
-    "title": "Soutenez la Campagne",
-    "subtitle": "Votre contribution fait la différence",
-    "goal": "Objectif de la Campagne : {{amount}} FCFA",
-    "collected": "{{amount}} FCFA collectés",
-    "total": "{{amount}} FCFA",
-    "form": {
-      "title": "Faire un Don",
-      "firstName": "Prénom",
-      "lastName": "Nom",
-      "email": "Email",
-      "amount": "Montant (FCFA)",
-      "submit": "Faire un Don Sécurisé"
-    },
-    "payment": {
-      "title": "Moyens de Paiement",
-      "accept": "Nous acceptons :",
-      "methods": {
-        "card": "Carte Bancaire",
-        "mobile": "Mobile Money (Orange, MTN)",
-        "paypal": "PayPal"
-      }
+      "title": "Informations de contact",
+      "address": "123 QG de Campagne, Yaoundé, Cameroun",
+      "phone": "+237 123 456 789",
+      "email": "contact@cabrallibii.cm",
+      "follow_us": "Suivez-nous sur les réseaux sociaux"
     }
   },
   "news": {
     "title": "Actualités",
-    "subtitle": "Restez informé des dernières actualités de la campagne",
-    "items": {
-      "campaign": {
+    "subtitle": "Restez informé des dernières nouvelles de la campagne",
+    "categories": {
+      "event": "Événement",
+      "meeting": "Rencontre",
+      "program": "Programme"
+    },
+    "articles": {
+      "campaign_launch": {
         "title": "Lancement de la Campagne 2025",
-        "date": "31 décembre 2024",
-        "category": "Événement",
-        "content": "Cabral Libii lance officiellement sa campagne présidentielle pour 2025..."
+        "date": "31 Décembre 2024",
+        "content": "Cabral Libii lance officiellement sa campagne présidentielle 2025 lors d'une grande cérémonie à Yaoundé. L'événement a rassemblé des milliers de partisans de toutes les régions du Cameroun, démontrant l'élan croissant derrière sa vision du changement. Lors de son puissant discours d'ouverture, Libii a présenté son plan global pour transformer la gouvernance, l'économie et les systèmes sociaux du Cameroun. L'événement de lancement comprenait également des performances culturelles célébrant la riche diversité du Cameroun et des présentations dirigées par des jeunes mettant en lumière des solutions innovantes pour le développement du pays."
       },
-      "youth": {
+      "youth_meeting": {
         "title": "Rencontre avec la Jeunesse",
-        "date": "30 décembre 2024",
-        "category": "Réunion",
-        "content": "Une session interactive avec les jeunes sur l'avenir du Cameroun..."
+        "date": "30 Décembre 2024",
+        "content": "Une session interactive avec les jeunes sur l'avenir du Cameroun s'est transformée en un puissant échange d'idées et d'aspirations. Le forum de quatre heures, tenu au Palais des Congrès de Yaoundé, a réuni plus de 500 jeunes leaders issus d'universités, d'écoles techniques et du monde entrepreneurial pour échanger directement avec Cabral Libii. Les principaux sujets abordés incluaient l'innovation numérique, la création d'emplois, la réforme de l'éducation et la participation des jeunes à la gouvernance. La session a abouti à la formation de comités d'action jeunesse dans toutes les régions et au lancement d'une plateforme numérique pour l'engagement continu des jeunes dans la campagne."
       },
-      "economy": {
+      "economic_program": {
         "title": "Programme Économique",
-        "date": "29 décembre 2024",
-        "category": "Programme",
-        "content": "Présentation détaillée du programme économique pour le développement..."
+        "date": "29 Décembre 2024",
+        "content": "La présentation détaillée du programme de développement économique révèle une approche innovante de la transformation économique du Cameroun. Le plan complet se concentre sur cinq piliers clés : le développement de l'économie numérique, la modernisation agricole, l'expansion des infrastructures, le soutien aux PME et la croissance industrielle. Les experts économiques ont salué le calendrier réaliste de mise en œuvre du programme et son potentiel de création de plus de 500 000 emplois au cours des trois premières années. La présentation incluait des mesures spécifiques pour réduire la bureaucratie, attirer les investissements étrangers et promouvoir l'entrepreneuriat local, avec un accent particulier sur l'autonomisation des femmes et des jeunes."
       }
     }
   },
   "scrutateurs": {
-    "title": "Devenez Scrutateur",
-    "subtitle": "Participez à la transparence du processus électoral",
+    "title": "Devenir Scrutateur",
+    "subtitle": "Rejoignez-nous pour assurer la transparence du processus électoral",
+    "description": "Votre rôle en tant que scrutateur est crucial pour maintenir l'intégrité de notre processus démocratique",
     "steps": {
-      "personal": "Informations Personnelles",
+      "personal": "Informations personnelles",
       "location": "Localisation",
       "confirmation": "Confirmation"
     },
     "form": {
-      "firstName": "Prénom",
-      "lastName": "Nom",
-      "email": "Email",
-      "phone": "Téléphone",
-      "region": "Région",
-      "city": "Ville",
-      "neighborhood": "Quartier"
+      "personal": {
+        "first_name": "Prénom",
+        "last_name": "Nom",
+        "email": "Email",
+        "phone": "Numéro de téléphone"
+      },
+      "location": {
+        "region": "Région",
+        "city": "Ville",
+        "polling_station": "Bureau de vote préféré",
+        "availability": "Disponibilité",
+        "experience": "Expérience précédente"
+      },
+      "confirmation": {
+        "title": "Vérifiez vos informations",
+        "message": "Veuillez vérifier vos informations avant de soumettre",
+        "terms": "J'accepte les termes et conditions",
+        "submit": "Soumettre la candidature"
+      }
     },
-    "confirmation": {
-      "title": "Merci pour votre inscription !",
-      "message": "Nous examinerons votre candidature et vous contacterons bientôt."
+    "regions": {
+      "adamawa": "Adamaoua",
+      "center": "Centre",
+      "east": "Est",
+      "far_north": "Extrême-Nord",
+      "littoral": "Littoral",
+      "north": "Nord",
+      "northwest": "Nord-Ouest",
+      "west": "Ouest",
+      "south": "Sud",
+      "southwest": "Sud-Ouest"
     },
     "buttons": {
-      "back": "Retour",
       "next": "Suivant",
+      "back": "Retour",
       "submit": "Soumettre"
     }
   }

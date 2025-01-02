@@ -15,20 +15,22 @@ import {
   useMediaQuery,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import { useTranslation } from 'react-i18next';
 
 const navItems = [
-  { title: 'Accueil', path: '/' },
-  { title: 'Programme', path: '/program' },
-  { title: 'Faire un don', path: '/donate' },
-  { title: 'Scrutateurs', path: '/scrutateurs' },
-  { title: 'Actualités', path: '/news' },
-  { title: 'Contact', path: '/contact' },
+  { titleKey: 'nav.home', path: '/' },
+  { titleKey: 'nav.program', path: '/program' },
+  { titleKey: 'nav.donate', path: '/donate' },
+  { titleKey: 'nav.scrutateurs', path: '/scrutateurs' },
+  { titleKey: 'nav.news', path: '/news' },
+  { titleKey: 'nav.contact', path: '/contact' },
 ];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const { t } = useTranslation();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -40,10 +42,10 @@ const Navbar = () => {
         <ListItem
           component={RouterLink}
           to={item.path}
-          key={item.title}
+          key={item.titleKey}
           onClick={handleDrawerToggle}
         >
-          <ListItemText primary={item.title} />
+          <ListItemText primary={t(item.titleKey)} />
         </ListItem>
       ))}
     </List>
@@ -81,12 +83,12 @@ const Navbar = () => {
             <Box sx={{ display: 'flex', gap: 2 }}>
               {navItems.map((item) => (
                 <Button
-                  key={item.title}
+                  key={item.titleKey}
                   component={RouterLink}
                   to={item.path}
                   color="inherit"
                 >
-                  {item.title}
+                  {t(item.titleKey)}
                 </Button>
               ))}
             </Box>

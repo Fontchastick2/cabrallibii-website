@@ -9,32 +9,35 @@ import {
   Chip,
 } from '@mui/material';
 import { motion } from 'framer-motion';
-
-const newsItems = [
-  {
-    title: 'Lancement de la Campagne 2025',
-    date: '31 Décembre 2024',
-    image: 'https://via.placeholder.com/800x400',
-    category: 'Événement',
-    content: 'Cabral Libii lance officiellement sa campagne présidentielle pour 2025...',
-  },
-  {
-    title: 'Rencontre avec la Jeunesse',
-    date: '30 Décembre 2024',
-    image: 'https://via.placeholder.com/800x400',
-    category: 'Rencontre',
-    content: "Une session interactive avec les jeunes sur l'avenir du Cameroun...",
-  },
-  {
-    title: 'Programme Économique',
-    date: '29 Décembre 2024',
-    image: 'https://via.placeholder.com/800x400',
-    category: 'Programme',
-    content: 'Présentation détaillée du programme économique pour le développement...',
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 const News = () => {
+  const { t } = useTranslation();
+
+  const newsItems = [
+    {
+      titleKey: 'news.articles.campaign_launch.title',
+      dateKey: 'news.articles.campaign_launch.date',
+      image: 'https://via.placeholder.com/800x400',
+      categoryKey: 'news.categories.event',
+      contentKey: 'news.articles.campaign_launch.content',
+    },
+    {
+      titleKey: 'news.articles.youth_meeting.title',
+      dateKey: 'news.articles.youth_meeting.date',
+      image: 'https://via.placeholder.com/800x400',
+      categoryKey: 'news.categories.meeting',
+      contentKey: 'news.articles.youth_meeting.content',
+    },
+    {
+      titleKey: 'news.articles.economic_program.title',
+      dateKey: 'news.articles.economic_program.date',
+      image: 'https://via.placeholder.com/800x400',
+      categoryKey: 'news.categories.program',
+      contentKey: 'news.articles.economic_program.content',
+    },
+  ];
+
   return (
     <Container sx={{ py: 8 }}>
       <motion.div
@@ -43,10 +46,10 @@ const News = () => {
         transition={{ duration: 0.5 }}
       >
         <Typography variant="h3" component="h1" gutterBottom align="center">
-          Actualités
+          {t('news.title')}
         </Typography>
         <Typography variant="h6" paragraph align="center" color="text.secondary">
-          Restez informé des dernières nouvelles de la campagne
+          {t('news.subtitle')}
         </Typography>
 
         <Grid container spacing={4}>
@@ -57,29 +60,77 @@ const News = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card>
+                <Card sx={{ height: { xs: '500px', md: '250px' }, display: 'flex' }}>
                   <Grid container>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} sx={{ height: { xs: '250px', md: '250px' } }}>
                       <CardMedia
                         component="img"
                         height="250"
                         image={item.image}
-                        alt={item.title}
+                        alt={t(item.titleKey)}
+                        sx={{ 
+                          objectFit: 'cover',
+                          height: '100%'
+                        }}
                       />
                     </Grid>
                     <Grid item xs={12} md={8}>
-                      <CardContent>
-                        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
-                          <Chip label={item.category} color="primary" />
+                      <CardContent 
+                        sx={{ 
+                          height: '100%', 
+                          display: 'flex', 
+                          flexDirection: 'column',
+                          p: 3
+                        }}
+                      >
+                        <Box sx={{ 
+                          display: 'flex', 
+                          justifyContent: 'space-between', 
+                          alignItems: 'center', 
+                          mb: 1.5 
+                        }}>
+                          <Chip 
+                            label={t(item.categoryKey)} 
+                            color="primary"
+                            size="small"
+                            sx={{
+                              fontWeight: 'medium',
+                              '& .MuiChip-label': {
+                                px: 2,
+                              },
+                            }}
+                          />
                           <Typography variant="body2" color="text.secondary">
-                            {item.date}
+                            {t(item.dateKey)}
                           </Typography>
                         </Box>
-                        <Typography variant="h5" gutterBottom>
-                          {item.title}
+                        <Typography 
+                          variant="h6" 
+                          sx={{ 
+                            mb: 1.5,
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis',
+                            display: '-webkit-box',
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: 'vertical',
+                          }}
+                        >
+                          {t(item.titleKey)}
                         </Typography>
-                        <Typography variant="body1" color="text.secondary">
-                          {item.content}
+                        <Typography 
+                          variant="body2" 
+                          color="text.secondary"
+                          sx={{
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis',
+                            display: '-webkit-box',
+                            WebkitLineClamp: 3,
+                            WebkitBoxOrient: 'vertical',
+                            lineHeight: 1.5,
+                            mb: 2
+                          }}
+                        >
+                          {t(item.contentKey)}
                         </Typography>
                       </CardContent>
                     </Grid>
