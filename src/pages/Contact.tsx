@@ -14,8 +14,11 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <Container maxWidth="lg">
       <motion.div
@@ -24,10 +27,10 @@ const Contact = () => {
         transition={{ duration: 0.5 }}
       >
         <Typography variant="h3" component="h1" gutterBottom align="center">
-          Contactez-nous
+          {t('contact.title')}
         </Typography>
         <Typography variant="h6" paragraph align="center" color="text.secondary">
-          Nous sommes là pour vous aider
+          {t('contact.subtitle')}
         </Typography>
 
         <Grid container spacing={4}>
@@ -36,27 +39,27 @@ const Contact = () => {
             <Card>
               <CardContent>
                 <Typography variant="h5" gutterBottom>
-                  Formulaire de contact
+                  {t('contact.form.title')}
                 </Typography>
                 <Grid container spacing={3}>
                   <Grid item xs={12} sm={6}>
                     <TextField
                       fullWidth
-                      label="Prénom"
+                      label={t('contact.form.first_name')}
                       variant="outlined"
                     />
                   </Grid>
                   <Grid item xs={12} sm={6}>
                     <TextField
                       fullWidth
-                      label="Nom"
+                      label={t('contact.form.last_name')}
                       variant="outlined"
                     />
                   </Grid>
                   <Grid item xs={12}>
                     <TextField
                       fullWidth
-                      label="Email"
+                      label={t('contact.form.email')}
                       variant="outlined"
                       type="email"
                     />
@@ -64,14 +67,14 @@ const Contact = () => {
                   <Grid item xs={12}>
                     <TextField
                       fullWidth
-                      label="Sujet"
+                      label={t('contact.form.phone')}
                       variant="outlined"
                     />
                   </Grid>
                   <Grid item xs={12}>
                     <TextField
                       fullWidth
-                      label="Message"
+                      label={t('contact.form.message')}
                       variant="outlined"
                       multiline
                       rows={4}
@@ -79,12 +82,12 @@ const Contact = () => {
                   </Grid>
                   <Grid item xs={12}>
                     <Button
+                      fullWidth
                       variant="contained"
                       color="primary"
                       size="large"
-                      fullWidth
                     >
-                      Envoyer
+                      {t('contact.form.submit')}
                     </Button>
                   </Grid>
                 </Grid>
@@ -97,34 +100,35 @@ const Contact = () => {
             <Card>
               <CardContent>
                 <Typography variant="h5" gutterBottom>
-                  Informations de contact
+                  {t('contact.info.title')}
                 </Typography>
-                <Typography variant="body1" paragraph>
-                  123 Rue de la République, Yaoundé, Cameroun
-                </Typography>
-                <Typography variant="body1" paragraph>
-                  Email: contact@cabrallibii.cm<br />
-                  Téléphone: +237 123 456 789
-                </Typography>
-
-                <Box sx={{ mt: 4 }}>
-                  <Typography variant="h6" gutterBottom>
-                    Suivez-nous
+                <Box sx={{ mb: 3 }}>
+                  <Typography variant="body1" paragraph>
+                    {t('contact.info.address')}
                   </Typography>
-                  <Box sx={{ display: 'flex', gap: 1 }}>
-                    <IconButton color="primary" aria-label="facebook">
-                      <FacebookIcon />
-                    </IconButton>
-                    <IconButton color="primary" aria-label="twitter">
-                      <TwitterIcon />
-                    </IconButton>
-                    <IconButton color="primary" aria-label="instagram">
-                      <InstagramIcon />
-                    </IconButton>
-                    <IconButton color="primary" aria-label="whatsapp">
-                      <WhatsAppIcon />
-                    </IconButton>
-                  </Box>
+                  <Typography variant="body1" paragraph>
+                    {t('contact.info.phone')}
+                  </Typography>
+                  <Typography variant="body1" paragraph>
+                    {t('contact.info.email')}
+                  </Typography>
+                </Box>
+                <Typography variant="h6" gutterBottom>
+                  {t('contact.info.follow_us')}
+                </Typography>
+                <Box sx={{ display: 'flex', gap: 2 }}>
+                  <IconButton color="primary" component="a" href="#">
+                    <FacebookIcon />
+                  </IconButton>
+                  <IconButton color="primary" component="a" href="#">
+                    <TwitterIcon />
+                  </IconButton>
+                  <IconButton color="primary" component="a" href="#">
+                    <InstagramIcon />
+                  </IconButton>
+                  <IconButton color="primary" component="a" href="#">
+                    <WhatsAppIcon />
+                  </IconButton>
                 </Box>
               </CardContent>
             </Card>

@@ -28,27 +28,27 @@
     "economy": {
       "title": "Economy",
       "description": "Sustainable economic development and job creation.",
-      "content": "Our economic program aims to transform Cameroon into a regional economic power. We focus on:\n\nDiversification of the economy beyond traditional sectors, with a particular emphasis on innovation and emerging technologies.\n\nCreation of a business-friendly environment, with administrative reforms to facilitate the creation and development of SMEs.\n\nDevelopment of essential infrastructure to support economic growth, particularly in transportation, energy, and telecommunications.\n\nPromotion of local entrepreneurship and attraction of foreign investment to create sustainable jobs and stimulate innovation.\n\nImplementation of fair and transparent fiscal policies to encourage investment while ensuring equitable distribution of wealth."
+      "content": "Our economic program aims to transform Cameroon into a regional economic power. We focus on:\n\nDiversification of the economy beyond traditional sectors, with a particular emphasis on innovation and emerging technologies.\n\nCreation of a business-friendly environment, with administrative reforms to facilitate the creation and development of SMEs.\n\nDevelopment of essential infrastructure to support economic growth.\n\nPromotion of regional and international trade partnerships.\n\nImplementation of policies to attract foreign investment while protecting local interests."
     },
     "governance": {
       "title": "Governance",
-      "description": "A transparent and efficient administration.",
-      "content": "Our vision for governance is based on the principles of transparency, efficiency, and citizen participation. We propose:\n\nDigitalization of administrative services to reduce bureaucracy and improve access to public services.\n\nStrengthening of democratic institutions and promotion of separation of powers.\n\nActive fight against corruption at all levels of public administration.\n\nEffective decentralization of power to give more autonomy to regions and local communities.\n\nImplementation of citizen consultation mechanisms to involve the population in important decisions."
+      "description": "Transparent and effective governance for all.",
+      "content": "Our governance program focuses on building strong, accountable institutions that serve all citizens:\n\nImplementation of digital governance solutions to improve service delivery and reduce corruption.\n\nStrengthening of local governance structures to ensure better representation.\n\nReform of administrative procedures to increase efficiency and transparency.\n\nEnhancement of citizen participation in decision-making processes.\n\nModernization of public services through technology and training."
     },
     "health": {
-      "title": "Health",
-      "description": "A modern and accessible healthcare system.",
-      "content": "Our health program aims to ensure universal access to quality care. Our priorities include:\n\nConstruction and modernization of health centers in all regions of the country.\n\nContinuous training of medical personnel and recruitment of new healthcare professionals.\n\nImprovement of access to essential medicines and development of local pharmaceutical production.\n\nStrengthening of prevention programs and health education.\n\nImplementation of a universal health insurance system to protect all citizens."
+      "title": "Healthcare",
+      "description": "Quality healthcare accessible to every Cameroonian.",
+      "content": "Our health program aims to revolutionize healthcare delivery in Cameroon:\n\nModernization of healthcare facilities across all regions.\n\nImplementation of universal health coverage.\n\nStrengthening of preventive healthcare programs.\n\nImprovement of maternal and child health services.\n\nDevelopment of medical training programs to increase healthcare workforce."
     },
     "infrastructure": {
       "title": "Infrastructure",
-      "description": "Modernization of national infrastructure.",
-      "content": "Our vision for Cameroon's infrastructure includes:\n\nDevelopment of a modern road network connecting all regions of the country.\n\nModernization of ports and airports to facilitate international trade.\n\nExpansion of the electricity grid and development of renewable energy.\n\nImprovement of urban infrastructure to create more livable and sustainable cities.\n\nDeployment of high-speed internet network throughout the country."
+      "description": "Modern infrastructure for sustainable development.",
+      "content": "Our infrastructure program focuses on building the foundation for economic growth:\n\nDevelopment of modern transportation networks across the country.\n\nExpansion of reliable electricity and water supply.\n\nImplementation of digital infrastructure for improved connectivity.\n\nConstruction of sustainable urban development projects.\n\nModernization of agricultural infrastructure to support food security."
     },
     "youth": {
-      "title": "Youth",
-      "description": "Opportunities and development for youth.",
-      "content": "Our youth program aims to create a promising future for young Cameroonians. We propose:\n\nVocational training programs adapted to labor market needs.\n\nIncentives for youth entrepreneurship and startup development.\n\nSports and cultural infrastructure to promote youth development.\n\nInternational exchange programs to enrich experiences and skills.\n\nMentoring and support system to guide youth in their professional development."
+      "title": "Youth Empowerment",
+      "description": "Empowering the next generation of leaders.",
+      "content": "Our youth program aims to create opportunities for young Cameroonians:\n\nCreation of job training and entrepreneurship programs.\n\nEstablishment of youth innovation centers across the country.\n\nDevelopment of sports and cultural facilities.\n\nImplementation of mentorship and leadership programs.\n\nSupport for youth-led initiatives and startups."
     }
   },
   "biography": {
@@ -88,103 +88,129 @@
   },
   "nav": {
     "home": "Home",
-    "vision": "Vision",
-    "biography": "Biography",
-    "media": "Media"
+    "program": "Program",
+    "donate": "Donate",
+    "scrutateurs": "Poll Workers",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "donate": {
+    "title": "Support the Campaign",
+    "subtitle": "Your contribution makes a difference",
+    "campaign_goal": "Campaign Goal: 1,000,000 FCFA",
+    "collected": "600,000 FCFA collected",
+    "goal": "1,000,000 FCFA",
+    "form": {
+      "title": "Make a Donation",
+      "amount": "Amount",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "submit": "Donate Now",
+      "secure_payment": "Secure payment powered by our partners"
+    },
+    "why_donate": {
+      "title": "Why Donate?",
+      "description": "Your donation helps us:",
+      "reasons": [
+        "Organize campaign events across the country",
+        "Develop and distribute campaign materials",
+        "Support our volunteers and field teams",
+        "Reach more citizens with our message"
+      ]
+    }
   },
   "contact": {
     "title": "Contact Us",
     "subtitle": "We'd love to hear from you",
     "form": {
       "title": "Send us a message",
-      "firstName": "First Name",
-      "lastName": "Last Name",
+      "first_name": "First Name",
+      "last_name": "Last Name",
       "email": "Email",
-      "subject": "Subject",
-      "message": "Message",
-      "send": "Send"
+      "phone": "Phone Number",
+      "message": "Your Message",
+      "submit": "Send Message"
     },
     "info": {
       "title": "Contact Information",
-      "address": "Campaign Headquarters:\n123 Example Street\nYaoundé, Cameroon",
-      "contact": "Email: contact@cabrallibii.com\nPhone: +237 123 456 789"
-    },
-    "social": {
-      "title": "Follow Us"
-    }
-  },
-  "donate": {
-    "title": "Support the Campaign",
-    "subtitle": "Your contribution makes a difference",
-    "goal": "Campaign goal: {{amount}} FCFA",
-    "collected": "{{amount}} FCFA collected",
-    "total": "{{amount}} FCFA",
-    "form": {
-      "title": "Make a donation",
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "amount": "Amount (FCFA)",
-      "submit": "Make a secure donation"
-    },
-    "payment": {
-      "title": "Payment Methods",
-      "accept": "We accept:",
-      "methods": {
-        "card": "Credit Card",
-        "mobile": "Mobile Money (Orange, MTN)",
-        "paypal": "PayPal"
-      }
+      "address": "123 Campaign HQ, Yaoundé, Cameroon",
+      "phone": "+237 123 456 789",
+      "email": "contact@cabrallibii.cm",
+      "follow_us": "Follow us on social media"
     }
   },
   "news": {
     "title": "News",
     "subtitle": "Stay informed about the latest campaign updates",
-    "items": {
-      "campaign": {
+    "categories": {
+      "event": "Event",
+      "meeting": "Meeting",
+      "program": "Program"
+    },
+    "articles": {
+      "campaign_launch": {
         "title": "2025 Campaign Launch",
         "date": "December 31, 2024",
-        "category": "Event",
-        "content": "Cabral Libii officially launches his presidential campaign for 2025..."
+        "content": "Cabral Libii officially launches his 2025 presidential campaign with a grand ceremony in Yaoundé. The event brought together thousands of supporters from all regions of Cameroon, demonstrating the growing momentum behind his vision for change. During his powerful opening speech, Libii outlined his comprehensive plan for transforming Cameroon's governance, economy, and social systems. The launch event also featured cultural performances celebrating Cameroon's rich diversity and youth-led presentations highlighting innovative solutions for the country's development."
       },
-      "youth": {
+      "youth_meeting": {
         "title": "Meeting with Youth",
         "date": "December 30, 2024",
-        "category": "Meeting",
-        "content": "An interactive session with young people about the future of Cameroon..."
+        "content": "An interactive session with young people about Cameroon's future turned into a powerful exchange of ideas and aspirations. The four-hour forum, held at the Yaoundé Conference Center, saw over 500 young leaders from universities, technical schools, and entrepreneurial backgrounds engage directly with Cabral Libii. Key topics included digital innovation, job creation, educational reform, and youth participation in governance. The session resulted in the formation of youth action committees across all regions and the launch of a digital platform for ongoing youth engagement in the campaign."
       },
-      "economy": {
+      "economic_program": {
         "title": "Economic Program",
         "date": "December 29, 2024",
-        "category": "Program",
-        "content": "Detailed presentation of the economic program for development..."
+        "content": "Detailed presentation of the economic development program reveals an innovative approach to Cameroon's economic transformation. The comprehensive plan focuses on five key pillars: digital economy development, agricultural modernization, infrastructure expansion, SME support, and industrial growth. Economic experts praised the program's realistic implementation timeline and its potential to create over 500,000 jobs in the first three years. The presentation included specific measures for reducing bureaucracy, attracting foreign investment, and promoting local entrepreneurship, with special emphasis on women and youth empowerment."
       }
     }
   },
   "scrutateurs": {
     "title": "Become a Poll Worker",
     "subtitle": "Join us to ensure transparency in the electoral process",
+    "description": "Your role as a poll worker is crucial for maintaining the integrity of our democratic process",
     "steps": {
       "personal": "Personal Information",
       "location": "Location",
       "confirmation": "Confirmation"
     },
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "phone": "Phone",
-      "region": "Region",
-      "city": "City",
-      "neighborhood": "Neighborhood"
+      "personal": {
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "email": "Email",
+        "phone": "Phone Number"
+      },
+      "location": {
+        "region": "Region",
+        "city": "City",
+        "polling_station": "Preferred Polling Station",
+        "availability": "Availability",
+        "experience": "Previous Experience"
+      },
+      "confirmation": {
+        "title": "Review Your Information",
+        "message": "Please review your information before submitting",
+        "terms": "I agree to the terms and conditions",
+        "submit": "Submit Application"
+      }
     },
-    "confirmation": {
-      "title": "Confirmation",
-      "message": "Please verify your information before submitting your application."
+    "regions": {
+      "adamawa": "Adamawa",
+      "center": "Center",
+      "east": "East",
+      "far_north": "Far North",
+      "littoral": "Littoral",
+      "north": "North",
+      "northwest": "Northwest",
+      "west": "West",
+      "south": "South",
+      "southwest": "Southwest"
     },
     "buttons": {
-      "back": "Back",
       "next": "Next",
+      "back": "Back",
       "submit": "Submit"
     }
   }

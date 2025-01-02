@@ -8,10 +8,16 @@ import {
   Grid,
   TextField,
   LinearProgress,
+  List,
+  ListItem,
+  ListItemText,
 } from '@mui/material';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Donate = () => {
+  const { t } = useTranslation();
+
   return (
     <Container maxWidth="lg">
       <motion.div
@@ -20,16 +26,16 @@ const Donate = () => {
         transition={{ duration: 0.5 }}
       >
         <Typography variant="h3" component="h1" gutterBottom align="center">
-          Soutenez la Campagne
+          {t('donate.title')}
         </Typography>
         <Typography variant="h6" paragraph align="center" color="text.secondary">
-          Votre contribution fait la différence
+          {t('donate.subtitle')}
         </Typography>
 
         {/* Progress Bar */}
         <Box sx={{ my: 4 }}>
           <Typography variant="h6" gutterBottom>
-            Objectif de la campagne: 1,000,000 FCFA
+            {t('donate.campaign_goal')}
           </Typography>
           <LinearProgress
             variant="determinate"
@@ -41,10 +47,10 @@ const Donate = () => {
           />
           <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 1 }}>
             <Typography variant="body2" color="text.secondary">
-              600,000 FCFA collectés
+              {t('donate.collected')}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              1,000,000 FCFA
+              {t('donate.goal')}
             </Typography>
           </Box>
         </Box>
@@ -55,27 +61,28 @@ const Donate = () => {
             <Card>
               <CardContent>
                 <Typography variant="h5" gutterBottom>
-                  Faire un don
+                  {t('donate.form.title')}
                 </Typography>
                 <Grid container spacing={3}>
-                  <Grid item xs={12} sm={6}>
+                  <Grid item xs={12}>
                     <TextField
                       fullWidth
-                      label="Prénom"
+                      label={t('donate.form.amount')}
                       variant="outlined"
+                      type="number"
                     />
                   </Grid>
-                  <Grid item xs={12} sm={6}>
+                  <Grid item xs={12}>
                     <TextField
                       fullWidth
-                      label="Nom"
+                      label={t('donate.form.name')}
                       variant="outlined"
                     />
                   </Grid>
                   <Grid item xs={12}>
                     <TextField
                       fullWidth
-                      label="Email"
+                      label={t('donate.form.email')}
                       variant="outlined"
                       type="email"
                     />
@@ -83,44 +90,52 @@ const Donate = () => {
                   <Grid item xs={12}>
                     <TextField
                       fullWidth
-                      label="Montant (FCFA)"
+                      label={t('donate.form.phone')}
                       variant="outlined"
-                      type="number"
                     />
                   </Grid>
                   <Grid item xs={12}>
                     <Button
+                      fullWidth
                       variant="contained"
                       color="primary"
                       size="large"
-                      fullWidth
-                      sx={{ mt: 2 }}
                     >
-                      Faire un don sécurisé
+                      {t('donate.form.submit')}
                     </Button>
+                    <Typography
+                      variant="caption"
+                      display="block"
+                      align="center"
+                      sx={{ mt: 1 }}
+                    >
+                      {t('donate.form.secure_payment')}
+                    </Typography>
                   </Grid>
                 </Grid>
               </CardContent>
             </Card>
           </Grid>
 
-          {/* Payment Methods */}
-          <Grid item xs={12} md={5}>
+          {/* Why Donate Section */}
+          <Grid item xs={12} md={4}>
             <Card>
               <CardContent>
                 <Typography variant="h5" gutterBottom>
-                  Moyens de paiement
+                  {t('donate.why_donate.title')}
                 </Typography>
-                <Box sx={{ mt: 2 }}>
-                  <Typography variant="body1" paragraph>
-                    Nous acceptons:
-                  </Typography>
-                  <ul>
-                    <li>Carte de crédit</li>
-                    <li>Mobile Money (Orange, MTN)</li>
-                    <li>PayPal</li>
-                  </ul>
-                </Box>
+                <Typography paragraph>
+                  {t('donate.why_donate.description')}
+                </Typography>
+                <List>
+                  {(t('donate.why_donate.reasons', { returnObjects: true }) as string[]).map(
+                    (reason: string, index: number) => (
+                      <ListItem key={index}>
+                        <ListItemText primary={reason} />
+                      </ListItem>
+                    )
+                  )}
+                </List>
               </CardContent>
             </Card>
           </Grid>
