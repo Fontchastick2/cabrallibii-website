@@ -38,19 +38,16 @@ const Navbar = () => {
 
   const drawer = (
     <List>
-      {navItems.map((item) => {
-        const translatedText = t(item.titleKey);
-        return (
-          <ListItem
-            component={RouterLink}
-            to={item.path}
-            key={item.titleKey}
-            onClick={handleDrawerToggle}
-          >
-            <ListItemText primary={translatedText} />
-          </ListItem>
-        );
-      })}
+      {navItems.map((item) => (
+        <ListItem
+          component={RouterLink}
+          to={item.path}
+          key={item.titleKey}
+          onClick={handleDrawerToggle}
+        >
+          <ListItemText primary={t(item.titleKey)} />
+        </ListItem>
+      ))}
     </List>
   );
 
@@ -106,6 +103,10 @@ const Navbar = () => {
         onClose={handleDrawerToggle}
         ModalProps={{
           keepMounted: true,
+        }}
+        sx={{
+          display: { xs: 'block', sm: 'none' },
+          '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 240 },
         }}
       >
         {drawer}
