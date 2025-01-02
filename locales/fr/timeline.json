@@ -1,0 +1,33 @@
+{
+  "image": {
+    "alt": "Photo de Cabral Libii"
+  },
+  "birth": {
+    "title": "Naissance",
+    "description": "Cabral Libii Li Ngue est né à Douala, au Cameroun, dans une famille modeste. Son éducation lui a inculqué un fort sens de la détermination et le désir de contribuer au développement du Cameroun."
+  },
+  "university": {
+    "title": "Études Universitaires",
+    "description": "Cabral a poursuivi ses études supérieures à l'Université de Yaoundé II, obtenant un diplôme en Droit et Sciences Politiques. Il s'est également spécialisé en journalisme et communication, se préparant à une carrière dans l'académie et les médias."
+  },
+  "journalist": {
+    "title": "Journaliste et Académicien",
+    "description": "Cabral a travaillé comme journaliste et s'est fait connaître pour son traitement des questions socio-politiques au Cameroun. Parallèlement, il enseignait la communication publique et les sciences politiques, influençant une génération d'étudiants avec ses idées réformistes."
+  },
+  "youth": {
+    "title": "Engagement pour la Jeunesse",
+    "description": "Cabral s'est concentré sur des initiatives pour engager les jeunes Camerounais dans les activités civiques. Il a commencé à organiser des forums et des programmes pour éduquer les jeunes sur la gouvernance et leur rôle dans les processus politiques."
+  },
+  "candidate": {
+    "title": "Préparation à la Candidature Présidentielle",
+    "description": "Libii a annoncé son intention de se présenter à la présidence, représentant le parti Univers. Il a lancé la campagne '11 Millions de Citoyens', visant à mobiliser les jeunes électeurs et à attirer l'attention sur la sous-représentation des jeunes dans la politique camerounaise."
+  },
+  "election": {
+    "title": "Élection Présidentielle 2018",
+    "description": "Cabral Libii s'est présenté à l'élection présidentielle camerounaise, obtenant la troisième place avec environ 6,28% des voix. Sa campagne a mis l'accent sur la réforme économique, la transparence et l'autonomisation des jeunes, gagnant une attention significative au niveau national et international."
+  },
+  "advocate": {
+    "title": "Défenseur Politique et Social",
+    "description": "Après l'élection, Libii a poursuivi son travail politique, se concentrant sur le développement local et le plaidoyer pour les réformes démocratiques. Il reste actif dans la promotion de l'implication des jeunes dans la gouvernance et l'adressage des problèmes pressants comme l'éducation, le chômage et les infrastructures."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "image": {
+    "alt": "Photo of Cabral Libii"
+  },
+  "birth": {
+    "title": "Birth",
+    "description": "Cabral Libii Li Ngue was born in Douala, Cameroon, into a modest family. His upbringing instilled in him a strong sense of determination and a desire to contribute to Cameroon's development."
+  },
+  "university": {
+    "title": "University Studies",
+    "description": "Cabral pursued higher education at the University of Yaoundé II, earning a degree in Law and Political Science. He also specialized in journalism and communication, preparing for a career in both academia and media."
+  },
+  "journalist": {
+    "title": "Journalist and Academic",
+    "description": "Cabral worked as a journalist and became known for addressing socio-political issues in Cameroon. Simultaneously, he taught public communication and political science, influencing a generation of students with his reformist ideas."
+  },
+  "youth": {
+    "title": "Advocate for Youth Engagement",
+    "description": "Cabral focused on initiatives to engage young Cameroonians in civic activities. He began organizing forums and programs to educate youths about governance and their role in political processes."
+  },
+  "candidate": {
+    "title": "Presidential Candidate Preparation",
+    "description": "Libii announced his intention to run for president, representing the Univers party. He started the '11 Million Citizens' campaign, aiming to mobilize young voters and bring attention to the underrepresentation of youth in Cameroonian politics."
+  },
+  "election": {
+    "title": "2018 Presidential Election",
+    "description": "Cabral Libii ran in the Cameroonian presidential election, earning third place with approximately 6.28% of the votes. His campaign emphasized economic reform, transparency, and youth empowerment, gaining significant attention nationally and internationally."
+  },
+  "advocate": {
+    "title": "Political and Social Advocate",
+    "description": "After the election, Libii continued his political work, focusing on grassroots development and advocacy for democratic reforms. He remains active in promoting youth involvement in governance and addressing pressing issues like education, unemployment, and infrastructure."
+  }
+}

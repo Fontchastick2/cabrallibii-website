@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cabrallibii-website/static/css/main.39e9c0a2.css",
+    "main.js": "/cabrallibii-website/static/js/main.ee8a7072.js",
+    "index.html": "/cabrallibii-website/index.html",
+    "main.39e9c0a2.css.map": "/cabrallibii-website/static/css/main.39e9c0a2.css.map",
+    "main.ee8a7072.js.map": "/cabrallibii-website/static/js/main.ee8a7072.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39e9c0a2.css",
+    "static/js/main.ee8a7072.js"
+  ]
+}
