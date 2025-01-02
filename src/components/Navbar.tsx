@@ -38,16 +38,19 @@ const Navbar = () => {
 
   const drawer = (
     <List>
-      {navItems.map((item) => (
-        <ListItem
-          component={RouterLink}
-          to={item.path}
-          key={item.titleKey}
-          onClick={handleDrawerToggle}
-        >
-          <ListItemText primary={t(item.titleKey)} />
-        </ListItem>
-      ))}
+      {navItems.map((item) => {
+        const translatedText = t(item.titleKey);
+        return (
+          <ListItem
+            component={RouterLink}
+            to={item.path}
+            key={item.titleKey}
+            onClick={handleDrawerToggle}
+          >
+            <ListItemText primary={translatedText} />
+          </ListItem>
+        );
+      })}
     </List>
   );
 
