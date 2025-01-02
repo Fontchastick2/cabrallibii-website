@@ -80,13 +80,14 @@ const Navbar = () => {
             Cabral Libii 2025
           </Typography>
           {!isMobile && (
-            <Box sx={{ display: 'flex', gap: 2 }}>
+            <Box sx={{ display: 'flex', flexGrow: 1, justifyContent: 'flex-end' }}>
               {navItems.map((item) => (
                 <Button
-                  key={item.titleKey}
                   component={RouterLink}
                   to={item.path}
+                  key={item.titleKey}
                   color="inherit"
+                  sx={{ mx: 1 }}
                 >
                   {t(item.titleKey)}
                 </Button>
