@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Container,
   Typography,
@@ -9,9 +10,10 @@ import {
   Chip,
 } from '@mui/material';
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
+import PageContainer from '../components/PageContainer';
 
-const News = () => {
+const News: React.FC = () => {
   const { t } = useTranslation();
 
   const newsItems = [
@@ -39,109 +41,106 @@ const News = () => {
   ];
 
   return (
-    <Container sx={{ py: 8 }}>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <Typography variant="h3" component="h1" gutterBottom align="center">
-          {t('news.title')}
-        </Typography>
-        <Typography variant="h6" paragraph align="center" color="text.secondary">
-          {t('news.subtitle')}
-        </Typography>
+    <PageContainer>
+      <Container sx={{ py: 8 }}>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Typography variant="h3" component="h1" gutterBottom align="center">
+            {t('news.title')}
+          </Typography>
+          <Typography variant="h6" paragraph align="center" color="text.secondary">
+            {t('news.subtitle')}
+          </Typography>
 
-        <Grid container spacing={4}>
-          {newsItems.map((item, index) => (
-            <Grid item xs={12} key={index}>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Card sx={{ height: { xs: '500px', md: '250px' }, display: 'flex' }}>
-                  <Grid container>
-                    <Grid item xs={12} md={4} sx={{ height: { xs: '250px', md: '250px' } }}>
-                      <CardMedia
-                        component="img"
-                        height="250"
-                        image={item.image}
-                        alt={t(item.titleKey)}
-                        sx={{ 
-                          objectFit: 'cover',
-                          height: '100%'
-                        }}
-                      />
-                    </Grid>
-                    <Grid item xs={12} md={8}>
-                      <CardContent 
-                        sx={{ 
-                          height: '100%', 
-                          display: 'flex', 
-                          flexDirection: 'column',
-                          p: 3
-                        }}
-                      >
-                        <Box sx={{ 
-                          display: 'flex', 
-                          justifyContent: 'space-between', 
-                          alignItems: 'center', 
-                          mb: 1.5 
-                        }}>
-                          <Chip 
-                            label={t(item.categoryKey)} 
-                            color="primary"
-                            size="small"
-                            sx={{
-                              fontWeight: 'medium',
-                              '& .MuiChip-label': {
-                                px: 2,
-                              },
-                            }}
-                          />
-                          <Typography variant="body2" color="text.secondary">
-                            {t(item.dateKey)}
-                          </Typography>
-                        </Box>
-                        <Typography 
-                          variant="h6" 
-                          sx={{ 
-                            mb: 1.5,
-                            overflow: 'hidden',
-                            textOverflow: 'ellipsis',
-                            display: '-webkit-box',
-                            WebkitLineClamp: 2,
-                            WebkitBoxOrient: 'vertical',
-                          }}
-                        >
-                          {t(item.titleKey)}
-                        </Typography>
-                        <Typography 
-                          variant="body2" 
-                          color="text.secondary"
+          <Grid container spacing={4}>
+            {newsItems.map((item, index) => (
+              <Grid item xs={12} key={index}>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Card sx={{ height: { xs: '500px', md: '250px' }, display: 'flex' }}>
+                    <Grid container>
+                      <Grid item xs={12} md={4} sx={{ height: { xs: '250px', md: '250px' } }}>
+                        <CardMedia
+                          component="img"
+                          height="250"
+                          image={item.image}
+                          alt={t(item.titleKey)}
                           sx={{
-                            overflow: 'hidden',
-                            textOverflow: 'ellipsis',
-                            display: '-webkit-box',
-                            WebkitLineClamp: 3,
-                            WebkitBoxOrient: 'vertical',
-                            lineHeight: 1.5,
-                            mb: 2
+                            objectFit: 'cover',
+                            height: '100%',
+                          }}
+                        />
+                      </Grid>
+                      <Grid item xs={12} md={8}>
+                        <CardContent
+                          sx={{
+                            height: '100%',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            p: 3,
                           }}
                         >
-                          {t(item.contentKey)}
-                        </Typography>
-                      </CardContent>
+                          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1.5 }}>
+                            <Chip
+                              label={t(item.categoryKey)}
+                              color="primary"
+                              size="small"
+                              sx={{
+                                fontWeight: 'medium',
+                                '& .MuiChip-label': {
+                                  px: 2,
+                                },
+                              }}
+                            />
+                            <Typography variant="body2" color="text.secondary">
+                              {t(item.dateKey)}
+                            </Typography>
+                          </Box>
+                          <Typography
+                            variant="h6"
+                            sx={{
+                              mb: 1.5,
+                              overflow: 'hidden',
+                              textOverflow: 'ellipsis',
+                              display: '-webkit-box',
+                              WebkitLineClamp: 2,
+                              WebkitBoxOrient: 'vertical',
+                            }}
+                          >
+                            {t(item.titleKey)}
+                          </Typography>
+                          <Typography
+                            variant="body2"
+                            color="text.secondary"
+                            sx={{
+                              overflow: 'hidden',
+                              textOverflow: 'ellipsis',
+                              display: '-webkit-box',
+                              WebkitLineClamp: 3,
+                              WebkitBoxOrient: 'vertical',
+                              lineHeight: 1.5,
+                              mb: 2,
+                            }}
+                          >
+                            {t(item.contentKey)}
+                          </Typography>
+                        </CardContent>
+                      </Grid>
                     </Grid>
-                  </Grid>
-                </Card>
-              </motion.div>
-            </Grid>
-          ))}
-        </Grid>
-      </motion.div>
-    </Container>
+                  </Card>
+                </motion.div>
+              </Grid>
+            ))}
+          </Grid>
+        </motion.div>
+      </Container>
+    </PageContainer>
   );
 };
 

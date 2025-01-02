@@ -123,7 +123,7 @@ const Timeline: React.FC = () => {
 
   return (
     <Box>
-      <Grid container spacing={18}>
+      <Grid container spacing={18} sx={{ pb: { xs: '100px', sm: 0 } }}>
         {isTabletUp && (
           <Grid item sm={5} md={4} sx={{ display: { xs: 'none', sm: 'block' } }}>
             <motion.div
