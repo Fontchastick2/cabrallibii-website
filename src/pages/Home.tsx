@@ -4,13 +4,15 @@ import Timeline from '../components/Timeline';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 import ReactFullpage from '@fullpage/react-fullpage';
+import { useTranslation } from 'react-i18next';
 
 const Home: React.FC = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const img = new Image();
-    img.src = '/images/cabral-libii.jpg';
+    img.src = `${process.env.PUBLIC_URL}/images/cabral-libii.jpg`;
     img.onload = () => {
       setImageLoaded(true);
     };
@@ -38,10 +40,10 @@ const Home: React.FC = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    backgroundImage: 'url(/images/cabral-libii.jpg)',
+                    backgroundImage: `url(${process.env.PUBLIC_URL}/images/cabral-libii.jpg)`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    opacity: 0,
+                    opacity: imageLoaded ? 0.7 : 0,
                     transition: 'opacity 2s ease-in-out',
                   },
                   '&::after': {
@@ -99,7 +101,7 @@ const Home: React.FC = () => {
                           mb: 2,
                         }}
                       >
-                        Ensemble pour un Cameroun Meilleur
+                        {t('home.mainTitle')}
                       </Typography>
                     </motion.div>
                     
@@ -118,7 +120,7 @@ const Home: React.FC = () => {
                           textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
                         }}
                       >
-                        Construisons un avenir prometteur pour notre nation
+                        {t('home.subtitle')}
                       </Typography>
                     </motion.div>
                   </Container>
@@ -145,7 +147,7 @@ const Home: React.FC = () => {
                     transition={{ duration: 0.6 }}
                   >
                     <Typography variant="h3" align="center" gutterBottom sx={{ mb: 6 }}>
-                      Notre Vision
+                      {t('home.vision.title')}
                     </Typography>
                   </motion.div>
                   
@@ -173,10 +175,10 @@ const Home: React.FC = () => {
                           />
                           <CardContent sx={{ p: 3 }}>
                             <Typography gutterBottom variant="h5" component="h2" sx={{ mb: 2 }}>
-                              Démocratie et Gouvernance
+                              {t('home.vision.democracy.title')}
                             </Typography>
                             <Typography variant="body1">
-                              Promouvoir une démocratie transparente et participative pour tous les Camerounais
+                              {t('home.vision.democracy.description')}
                             </Typography>
                           </CardContent>
                         </Card>
@@ -206,10 +208,10 @@ const Home: React.FC = () => {
                           />
                           <CardContent sx={{ p: 3 }}>
                             <Typography gutterBottom variant="h5" component="h2" sx={{ mb: 2 }}>
-                              Éducation pour Tous
+                              {t('home.vision.education.title')}
                             </Typography>
                             <Typography variant="body1">
-                              Garantir une éducation de qualité accessible à tous les jeunes Camerounais
+                              {t('home.vision.education.description')}
                             </Typography>
                           </CardContent>
                         </Card>
@@ -239,10 +241,10 @@ const Home: React.FC = () => {
                           />
                           <CardContent sx={{ p: 3 }}>
                             <Typography gutterBottom variant="h5" component="h2" sx={{ mb: 2 }}>
-                              Économie Durable
+                              {t('home.vision.economy.title')}
                             </Typography>
                             <Typography variant="body1">
-                              Développer une économie forte et inclusive pour la prospérité de tous
+                              {t('home.vision.economy.description')}
                             </Typography>
                           </CardContent>
                         </Card>

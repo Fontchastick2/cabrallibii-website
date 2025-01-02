@@ -6,8 +6,13 @@ const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
   const [isHovered, setIsHovered] = useState(false);
 
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
+  const changeLanguage = async (lng: string) => {
+    try {
+      await i18n.changeLanguage(lng);
+      localStorage.setItem('i18nextLng', lng);
+    } catch (error) {
+      console.error('Error changing language:', error);
+    }
   };
 
   return (
@@ -29,33 +34,29 @@ const LanguageSwitcher: React.FC = () => {
       }}
     >
       <ButtonGroup variant="contained" size="medium">
-        <Button 
-          onClick={() => changeLanguage('en')}
-          sx={{ 
-            backgroundColor: i18n.language === 'en' ? '#4a90e2' : 'rgba(255, 255, 255, 0.2)',
-            color: 'white',
-            fontWeight: 'bold',
-            minWidth: '48px',
-            '&:hover': {
-              backgroundColor: i18n.language === 'en' ? '#357abd' : 'rgba(255, 255, 255, 0.3)'
-            }
-          }}
-        >
-          EN
-        </Button>
-        <Button 
+        <Button
           onClick={() => changeLanguage('fr')}
-          sx={{ 
-            backgroundColor: i18n.language === 'fr' ? '#4a90e2' : 'rgba(255, 255, 255, 0.2)',
+          sx={{
+            backgroundColor: i18n.language === 'fr' ? '#1976d2' : 'rgba(255, 255, 255, 0.1)',
             color: 'white',
-            fontWeight: 'bold',
-            minWidth: '48px',
             '&:hover': {
-              backgroundColor: i18n.language === 'fr' ? '#357abd' : 'rgba(255, 255, 255, 0.3)'
-            }
+              backgroundColor: i18n.language === 'fr' ? '#1565c0' : 'rgba(255, 255, 255, 0.2)',
+            },
           }}
         >
           FR
+        </Button>
+        <Button
+          onClick={() => changeLanguage('en')}
+          sx={{
+            backgroundColor: i18n.language === 'en' ? '#1976d2' : 'rgba(255, 255, 255, 0.1)',
+            color: 'white',
+            '&:hover': {
+              backgroundColor: i18n.language === 'en' ? '#1565c0' : 'rgba(255, 255, 255, 0.2)',
+            },
+          }}
+        >
+          EN
         </Button>
       </ButtonGroup>
     </Box>

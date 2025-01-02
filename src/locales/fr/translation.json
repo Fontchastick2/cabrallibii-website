@@ -1,4 +1,23 @@
 {
+  "home": {
+    "mainTitle": "Ensemble pour un Cameroun Meilleur",
+    "subtitle": "Construisons un avenir prometteur pour notre nation",
+    "vision": {
+      "title": "Notre Vision",
+      "democracy": {
+        "title": "Démocratie et Gouvernance",
+        "description": "Promouvoir une démocratie transparente et participative pour tous les Camerounais"
+      },
+      "education": {
+        "title": "Éducation pour Tous",
+        "description": "Garantir une éducation de qualité accessible à tous les jeunes Camerounais"
+      },
+      "economy": {
+        "title": "Économie Durable",
+        "description": "Développer une économie forte et inclusive pour la prospérité de tous"
+      }
+    }
+  },
   "hero": {
     "title": "Cabral Libii",
     "subtitle": "Leader Politique & Défenseur du Changement"

@@ -213,5 +213,24 @@
       "back": "Back",
       "submit": "Submit"
     }
+  },
+  "home": {
+    "mainTitle": "Together for a Better Cameroon",
+    "subtitle": "Building a promising future for our nation",
+    "vision": {
+      "title": "Our Vision",
+      "democracy": {
+        "title": "Democracy and Governance",
+        "description": "Promoting transparent and participatory democracy for all Cameroonians"
+      },
+      "education": {
+        "title": "Education for All",
+        "description": "Ensuring quality education accessible to all young Cameroonians"
+      },
+      "economy": {
+        "title": "Sustainable Economy",
+        "description": "Developing a strong and inclusive economy for the prosperity of all"
+      }
+    }
   }
 }

@@ -134,7 +134,7 @@ const Timeline: React.FC = () => {
             >
               <Box
                 component="img"
-                src="/timeline.jpg"
+                src={`${process.env.PUBLIC_URL}/timeline.jpg`}
                 alt="Timeline"
                 sx={{
                   width: '150%',
