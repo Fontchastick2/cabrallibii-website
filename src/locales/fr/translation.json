@@ -105,9 +105,9 @@
       "send": "Envoyer"
     },
     "info": {
-      "title": "Informations de Contact",
-      "address": "Siège de Campagne :\n123 Rue Exemple\nYaoundé, Cameroun",
-      "contact": "Email : contact@cabrallibii.com\nTéléphone : +237 123 456 789"
+      "title": "Coordonnées",
+      "address": "Siège de Campagne:\n123 Rue Example\nYaoundé, Cameroun",
+      "contact": "Email: contact@cabrallibii.com\nTél: +237 123 456 789"
     },
     "social": {
       "title": "Suivez-nous"
@@ -116,22 +116,22 @@
   "donate": {
     "title": "Soutenez la Campagne",
     "subtitle": "Votre contribution fait la différence",
-    "goal": "Objectif de la Campagne : {{amount}} FCFA",
+    "goal": "Objectif de la campagne: {{amount}} FCFA",
     "collected": "{{amount}} FCFA collectés",
     "total": "{{amount}} FCFA",
     "form": {
-      "title": "Faire un Don",
+      "title": "Faire un don",
       "firstName": "Prénom",
       "lastName": "Nom",
       "email": "Email",
       "amount": "Montant (FCFA)",
-      "submit": "Faire un Don Sécurisé"
+      "submit": "Faire un don sécurisé"
     },
     "payment": {
-      "title": "Moyens de Paiement",
-      "accept": "Nous acceptons :",
+      "title": "Moyens de paiement",
+      "accept": "Nous acceptons:",
       "methods": {
-        "card": "Carte Bancaire",
+        "card": "Carte bancaire",
         "mobile": "Mobile Money (Orange, MTN)",
         "paypal": "PayPal"
       }
@@ -162,10 +162,10 @@
     }
   },
   "scrutateurs": {
-    "title": "Devenez Scrutateur",
-    "subtitle": "Participez à la transparence du processus électoral",
+    "title": "Devenir Scrutateur",
+    "subtitle": "Rejoignez-nous pour assurer la transparence du processus électoral",
     "steps": {
-      "personal": "Informations Personnelles",
+      "personal": "Informations personnelles",
       "location": "Localisation",
       "confirmation": "Confirmation"
     },
@@ -179,8 +179,8 @@
       "neighborhood": "Quartier"
     },
     "confirmation": {
-      "title": "Merci pour votre inscription !",
-      "message": "Nous examinerons votre candidature et vous contacterons bientôt."
+      "title": "Confirmation",
+      "message": "Veuillez vérifier vos informations avant de soumettre votre candidature."
     },
     "buttons": {
       "back": "Retour",

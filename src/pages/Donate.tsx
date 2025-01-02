@@ -13,7 +13,7 @@ import { motion } from 'framer-motion';
 
 const Donate = () => {
   return (
-    <Container sx={{ py: 8 }}>
+    <Container maxWidth="lg">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,10 @@ const Donate = () => {
           <LinearProgress
             variant="determinate"
             value={60}
-            sx={{ height: 10, borderRadius: 5 }}
+            sx={{
+              height: 10,
+              borderRadius: 5,
+            }}
           />
           <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 1 }}>
             <Typography variant="body2" color="text.secondary">
@@ -48,7 +51,7 @@ const Donate = () => {
 
         <Grid container spacing={4}>
           {/* Donation Form */}
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} md={7}>
             <Card>
               <CardContent>
                 <Typography variant="h5" gutterBottom>
@@ -88,6 +91,7 @@ const Donate = () => {
                   <Grid item xs={12}>
                     <Button
                       variant="contained"
+                      color="primary"
                       size="large"
                       fullWidth
                       sx={{ mt: 2 }}
@@ -101,7 +105,7 @@ const Donate = () => {
           </Grid>
 
           {/* Payment Methods */}
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={5}>
             <Card>
               <CardContent>
                 <Typography variant="h5" gutterBottom>
@@ -112,7 +116,7 @@ const Donate = () => {
                     Nous acceptons:
                   </Typography>
                   <ul>
-                    <li>Carte bancaire</li>
+                    <li>Carte de crédit</li>
                     <li>Mobile Money (Orange, MTN)</li>
                     <li>PayPal</li>
                   </ul>

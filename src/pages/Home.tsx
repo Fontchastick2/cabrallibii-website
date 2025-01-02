@@ -4,10 +4,8 @@ import Timeline from '../components/Timeline';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 import ReactFullpage from '@fullpage/react-fullpage';
-import { useTranslation } from 'react-i18next';
 
 const Home: React.FC = () => {
-  const { t } = useTranslation();
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
@@ -101,7 +99,7 @@ const Home: React.FC = () => {
                           mb: 2,
                         }}
                       >
-                        {t('hero.title')}
+                        Ensemble pour un Cameroun Meilleur
                       </Typography>
                     </motion.div>
                     
@@ -120,7 +118,7 @@ const Home: React.FC = () => {
                           textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
                         }}
                       >
-                        {t('hero.subtitle')}
+                        Construisons un avenir prometteur pour notre nation
                       </Typography>
                     </motion.div>
                   </Container>
@@ -147,7 +145,7 @@ const Home: React.FC = () => {
                     transition={{ duration: 0.6 }}
                   >
                     <Typography variant="h3" align="center" gutterBottom sx={{ mb: 6 }}>
-                      {t('vision.title')}
+                      Notre Vision
                     </Typography>
                   </motion.div>
                   
@@ -164,7 +162,7 @@ const Home: React.FC = () => {
                             component="img"
                             height="300"
                             image="https://via.placeholder.com/600x300"
-                            alt="Democracy"
+                            alt="Démocratie"
                             sx={{
                               objectFit: 'cover',
                               transition: 'transform 0.3s ease-in-out',
@@ -175,10 +173,10 @@ const Home: React.FC = () => {
                           />
                           <CardContent sx={{ p: 3 }}>
                             <Typography gutterBottom variant="h5" component="h2" sx={{ mb: 2 }}>
-                              {t('vision.democracy.title')}
+                              Démocratie et Gouvernance
                             </Typography>
                             <Typography variant="body1">
-                              {t('vision.democracy.description')}
+                              Promouvoir une démocratie transparente et participative pour tous les Camerounais
                             </Typography>
                           </CardContent>
                         </Card>
@@ -197,7 +195,7 @@ const Home: React.FC = () => {
                             component="img"
                             height="300"
                             image="https://via.placeholder.com/600x300"
-                            alt="Education"
+                            alt="Éducation"
                             sx={{
                               objectFit: 'cover',
                               transition: 'transform 0.3s ease-in-out',
@@ -208,10 +206,10 @@ const Home: React.FC = () => {
                           />
                           <CardContent sx={{ p: 3 }}>
                             <Typography gutterBottom variant="h5" component="h2" sx={{ mb: 2 }}>
-                              {t('vision.education.title')}
+                              Éducation pour Tous
                             </Typography>
                             <Typography variant="body1">
-                              {t('vision.education.description')}
+                              Garantir une éducation de qualité accessible à tous les jeunes Camerounais
                             </Typography>
                           </CardContent>
                         </Card>
@@ -230,7 +228,7 @@ const Home: React.FC = () => {
                             component="img"
                             height="300"
                             image="https://via.placeholder.com/600x300"
-                            alt="Economy"
+                            alt="Économie"
                             sx={{
                               objectFit: 'cover',
                               transition: 'transform 0.3s ease-in-out',
@@ -241,10 +239,10 @@ const Home: React.FC = () => {
                           />
                           <CardContent sx={{ p: 3 }}>
                             <Typography gutterBottom variant="h5" component="h2" sx={{ mb: 2 }}>
-                              {t('vision.economy.title')}
+                              Économie Durable
                             </Typography>
                             <Typography variant="body1">
-                              {t('vision.economy.description')}
+                              Développer une économie forte et inclusive pour la prospérité de tous
                             </Typography>
                           </CardContent>
                         </Card>
@@ -265,7 +263,7 @@ const Home: React.FC = () => {
               }}>
                 <Container>
                   <Typography variant="h3" align="center" gutterBottom sx={{ mb: 6 }}>
-                    {t('biography.title')}
+                    Biographie
                   </Typography>
                   <Timeline />
                 </Container>

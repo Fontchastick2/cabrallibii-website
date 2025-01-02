@@ -28,10 +28,13 @@ const regions = [
   'Sud-Ouest',
 ];
 
-const steps = ['Informations personnelles', 'Localisation', 'Confirmation'];
-
 const Scrutateurs = () => {
   const [activeStep, setActiveStep] = useState(0);
+  const steps = [
+    'Informations personnelles',
+    'Localisation',
+    'Confirmation'
+  ];
 
   const handleNext = () => {
     setActiveStep((prevStep) => prevStep + 1);
@@ -42,7 +45,7 @@ const Scrutateurs = () => {
   };
 
   return (
-    <Container sx={{ py: 8 }}>
+    <Container maxWidth="lg">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

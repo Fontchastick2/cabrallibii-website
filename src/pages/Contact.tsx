@@ -17,7 +17,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Contact = () => {
   return (
-    <Container sx={{ py: 8 }}>
+    <Container maxWidth="lg">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -27,15 +27,16 @@ const Contact = () => {
           Contactez-nous
         </Typography>
         <Typography variant="h6" paragraph align="center" color="text.secondary">
-          Nous sommes à votre écoute
+          Nous sommes là pour vous aider
         </Typography>
 
         <Grid container spacing={4}>
-          <Grid item xs={12} md={8}>
+          {/* Contact Form */}
+          <Grid item xs={12} md={7}>
             <Card>
               <CardContent>
                 <Typography variant="h5" gutterBottom>
-                  Envoyez-nous un message
+                  Formulaire de contact
                 </Typography>
                 <Grid container spacing={3}>
                   <Grid item xs={12} sm={6}>
@@ -79,6 +80,7 @@ const Contact = () => {
                   <Grid item xs={12}>
                     <Button
                       variant="contained"
+                      color="primary"
                       size="large"
                       fullWidth
                     >
@@ -90,23 +92,19 @@ const Contact = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={4}>
+          {/* Contact Information */}
+          <Grid item xs={12} md={5}>
             <Card>
               <CardContent>
                 <Typography variant="h5" gutterBottom>
-                  Coordonnées
+                  Informations de contact
                 </Typography>
                 <Typography variant="body1" paragraph>
-                  Siège de Campagne:
-                  <br />
-                  123 Rue Example
-                  <br />
-                  Yaoundé, Cameroun
+                  123 Rue de la République, Yaoundé, Cameroun
                 </Typography>
                 <Typography variant="body1" paragraph>
-                  Email: contact@cabrallibii.com
-                  <br />
-                  Tél: +237 123 456 789
+                  Email: contact@cabrallibii.cm<br />
+                  Téléphone: +237 123 456 789
                 </Typography>
 
                 <Box sx={{ mt: 4 }}>

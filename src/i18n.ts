@@ -4,15 +4,6 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import translationEN from './locales/en/translation.json';
 import translationFR from './locales/fr/translation.json';
 
-declare module 'react-i18next' {
-  interface CustomTypeOptions {
-    defaultNS: 'translation';
-    resources: {
-      translation: typeof translationEN;
-    };
-  }
-}
-
 const resources = {
   en: {
     translation: translationEN
@@ -27,8 +18,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en',
-    defaultNS: 'translation',
+    fallbackLng: 'fr',
     interpolation: {
       escapeValue: false
     }
