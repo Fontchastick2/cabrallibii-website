@@ -8,5 +8,16 @@ declare module 'i18next' {
       en: typeof translationEN;
       fr: typeof translationEN;
     };
+    returnNull: false;
+  }
+}
+
+declare module 'react-i18next' {
+  interface CustomTypeOptions {
+    defaultNS: 'translation';
+    resources: {
+      en: typeof translationEN;
+      fr: typeof translationEN;
+    };
   }
 }
