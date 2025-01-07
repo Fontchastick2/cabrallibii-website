@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -15,6 +15,16 @@ import LanguageSwitcher from './components/LanguageSwitcher';
 import './i18n';
 
 const App: React.FC = () => {
+  useEffect(() => {
+    // Reset any global scroll settings that might be set by fullpage.js
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+    document.documentElement.style.height = '';
+    document.body.style.height = '';
+    document.documentElement.style.position = '';
+    document.body.style.position = '';
+  }, []); // Run once on mount
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

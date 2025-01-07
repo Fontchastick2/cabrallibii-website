@@ -16,6 +16,16 @@ const Home: React.FC = () => {
     img.onload = () => {
       setImageLoaded(true);
     };
+
+    // Cleanup function to reset fullpage.js settings
+    return () => {
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+      document.documentElement.style.height = '';
+      document.body.style.height = '';
+      document.documentElement.style.position = '';
+      document.body.style.position = '';
+    };
   }, []);
 
   return (
@@ -62,7 +72,7 @@ const Home: React.FC = () => {
                 <motion.div
                   initial={{ scale: 1.5 }}
                   animate={{ scale: 1 }}
-                  transition={{ 
+                  transition={{
                     duration: 3,
                     ease: [0.645, 0.045, 0.355, 1],
                   }}
